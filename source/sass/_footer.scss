@@ -1,0 +1,91 @@
+footer {
+  color: $alt-font-color;
+  text-align: center;
+  background-color: $brand-primary-color;
+
+  @include media($desktop) {
+    min-height: 38.2vh;
+  }
+
+  h3, small {
+    color: inherit;
+    font-weight: book;
+    font-size: modular-scale(-1);
+  }
+  small {
+    letter-spacing: modular-scale(-9);
+    font-size: modular-scale(-2);
+    opacity: .75;
+  }
+  a, a:visited, a:active {
+    color: inherit;
+    font-size: modular-scale(-1);
+    text-decoration: none;
+  }
+  .container {
+    @include ma-container;
+    @include media($desktop) {
+      padding: $base-spacing modular-scale(4) 0 modular-scale(4);
+      background-color: $brand-primary-color;
+      text-align: left;
+    }
+  }
+  .footer-links {
+    @include ma-columns(4);
+    margin: 0 0 $base-spacing;
+    padding-top: modular-scale(2);
+    .column {
+      margin-bottom: modular-scale(3);
+      text-align: center;
+    }
+    address {
+      font-style: normal;
+      line-height: inherit;
+
+      span {
+        font-size: modular-scale(-1);
+      }
+
+      .fn {
+        display: none;
+      }
+
+      .tel {
+        font-size: modular-scale(0);
+      }
+    }
+  }
+  .footer-logos {
+    text-align: center;
+    font-size: $base-font-size;
+    a {
+      font-size: $base-font-size;
+    }
+    .footer-logo {
+      display: inline-block;
+      margin-right: modular-scale(2);
+      &:last-child {
+        margin-right: 0;
+      }
+      img {
+        height: ma-spacing(1);
+      }
+    }
+  }
+  .footer-copyright {
+    @extend .centered-row;
+    padding-top: ma-spacing(1);
+    margin-bottom: ma-spacing(1) !important;
+    p {
+      display: inline-block;
+      margin: 0 0 0 modular-scale(-2);
+    }
+    img {
+      display: inline-block;
+      height: modular-scale(0);
+      margin: 0;
+      position: relative;
+      top: 2px;
+    }
+  }
+}

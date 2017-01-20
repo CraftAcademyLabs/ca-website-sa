@@ -1,0 +1,199 @@
+body, html {
+  @include font-feature-settings("kern", "liga", "pnum");
+  -webkit-font-smoothing: antialiased;
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+  font-weight: 500;
+  color: $brand-primary-color;
+  margin: 0 0 $base-line-height;
+
+  @include media($mobile) {
+    word-spacing: $mobile;
+  }
+}
+
+h1 {
+  @include ma-header(3);
+  // Custom font size for mobile.
+  font-size: 1.9rem;
+}
+
+h2 {
+  @include ma-header(2);
+}
+
+h3 {
+  @include ma-header(1);
+}
+
+h4 {
+  @include ma-header(-1);
+  color: $medium-gray;
+
+  &.leader, &.subheader {
+    color: $medium-gray;
+  }
+
+  &.leader {
+    margin-bottom: 0;
+  }
+
+  &.subheader {
+    margin-top: -1 * $base-line-height;
+    & + .subheader {
+      margin-top: 0;
+    }
+  }
+
+  &.alt-color {
+    color: $brand-primary-color;
+  }
+}
+
+h5 {
+  @include ma-header(-1);
+  color: $black;
+}
+
+.header-container {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+p, li {
+  margin: 0 0 $base-spacing;
+  font-size: $base-font-size;
+  font-weight: 400;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  @include media($desktop) {
+    font-size: $base-font-size;
+  }
+}
+.small {
+  font-size: $base-font-size / $modular-scale-ratio;
+  color: lighten($dark-gray, 15%);
+}
+
+a {
+  color: $action-color;
+  text-decoration: underline;
+  transition: color 0.1s linear;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: darken($action-color, 15%);
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+blockquote {
+  /* --- structure --- */
+  position: relative;
+  margin: 0 0 $base-spacing;
+
+  /* theme */
+  font-style: italic;
+  text-indent: 2em;
+  font-size: $base-font-size;
+
+  &:before {
+    display: block;
+    position: absolute;
+    height: 0;
+    width: 0;
+    font-size: 3em;
+    font-family: "helvetica";
+    font-weight: bold;
+    line-height: 0;
+    text-indent: 0;
+  }
+
+  &:before {
+    content: "\201C"; /* &ldquo; */
+    left: -0.05em;
+    top: 0.28em;
+  }
+
+  @include media($desktop) {
+    font-size: modular-scale(1);
+    line-height: 1.5 * $base-line-height;
+  }
+
+}
+
+.article__blockquote {
+  max-width: 480px;
+  padding-bottom: rhythm-increment(0) + em;
+  padding-left: 0.618em; /* 1.618em * 0.618em = 16px/1em */
+}
+
+img,
+picture {
+  margin: 0;
+  max-width: 100%;
+}
+
+// General-purpose copy, including titles
+.copy {
+  text-align: center;
+}
+
+.copy--left {
+  @extend .copy;
+
+  @include media($desktop) {
+    text-align: left;
+  }
+}
+
+.copy--right {
+  @extend .copy;
+  @include media($desktop) {
+    text-align: right;
+  }
+}
+
+.statistic {
+  @include ma-header(3);
+  // Custom font size for mobile.
+  font-size: 1.9rem;
+  margin-bottom: 1rem;
+}
+
+pre {
+  text-align: left !important;
+  background: $brand-secondary-color;
+  padding: ma-spacing(1);
+  margin: 0 auto;
+}

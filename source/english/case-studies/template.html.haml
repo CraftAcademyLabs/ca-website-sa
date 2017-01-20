@@ -1,0 +1,29 @@
+/ Case Study Template
+
+%section.no-padding-bottom
+  .container
+    .profile-row
+      .image.show-desktop
+        = image_tag("people/#{grad[:image]}")
+      .copy
+        %h4.leader Our students
+        %h1= "#{grad[:first_name]} #{grad[:last_name]}"
+        %h4.subheader= grad[:summary]
+        %blockquote= grad[:testimonial]
+        - next_grad = next_en_graduate(grad)
+        .image.hide-desktop.no-padding
+          = image_tag("people/#{grad[:image]}")
+%hr
+
+%section.no-padding-top
+  .article--centered
+    %article
+      %dl
+        - grad[:case_study].each do | qa |
+          %dt= qa[:question]
+          %dd= markdown qa[:answer]
+    .button-row
+      = link_to 'Back', '/english', class: 'button button--horizontal'
+      = link_to 'Next story', "/english/students/#{graduate_slug(next_grad)}", class: 'button button--vertical'
+
+= partial :'english/partials/apply'

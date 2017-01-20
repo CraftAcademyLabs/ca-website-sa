@@ -1,0 +1,313 @@
+.centered-row {
+  @include ma-row(table);
+  text-align: center;
+  img {
+    @include ma-hide-mobile;
+  }
+  @include media($desktop) {
+    img {
+      margin-right: 5%;
+      margin-left: 5%;
+    }
+  }
+  .column {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+  }
+
+  p {
+    margin: 0 auto ma-spacing(1);
+    max-width: em(580);
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.button-row {
+  @include ma-row;
+  #{$all-button-inputs}, .button, .button--horizontal, .button--vertical {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: ma-spacing(1);
+    &:nth-child(2n) {
+      margin: 0 auto ma-spacing(1) auto;
+    }
+    &:last-child {
+      margin-right: auto;
+    }
+
+    @include media($desktop) {
+      & > p {
+        text-align: center;
+      }
+      display: inline-block;
+      margin-bottom: 0 !important;
+
+
+      /* margins for central CTAs only */
+      &:nth-child(2n) {
+        margin: 0 modular-scale(1);
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &.button--large {
+        &:nth-child(2n) {
+          margin: 0 modular-scale(1);
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+.button-row--left {
+  @extend .button-row;
+  text-align: center;
+
+  .button, .button--horizontal, .button--vertical {
+    display: inline-block;
+  }
+
+  @include media($desktop) {
+    text-align: left;
+  }
+}
+
+.email-capture-row {
+  @include ma-row;
+  form {
+    @extend form.alt;
+    @include clearfix;
+
+    input {
+      display: block;
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    input[type="email"] {
+      background-color: white;
+      border-radius: $button-border-radius;
+      margin-bottom: ma-spacing(1);
+      line-height: $base-line-height;
+      padding: ma-spacing(0.5);
+      // Magic number for the benefit of IE (die)
+      height: 3.25rem;
+    }
+
+    input[type="submit"] {
+      width: $base-button-width;
+    }
+
+    @include media($desktop) {
+      text-align: center;
+      display: inline-block;
+      input {
+        display: inline-block;
+        float: left;
+      }
+      input[type="email"] {
+        border-radius: 0;
+        border-right-width: 0;
+        @include border-left-radius($button-border-radius);
+        padding-left: $base-line-height;
+        width: auto;
+        margin: 0;
+      }
+      input[type="submit"] {
+        @include border-left-radius(0);
+      }
+    }
+  }
+}
+
+.profile-row {
+  @include ma-row(table);
+  margin-bottom: 0;
+  .image {
+    vertical-align: bottom;
+    img {
+      display: block;
+      margin: 0 auto $base-spacing;
+    }
+    &.no-padding img {
+      display: block;
+      margin: 0 auto;
+    }
+    @include media($desktop) {
+      @include span-columns(5);
+      img {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .copy {
+    vertical-align: middle;
+    @include media($desktop) {
+      text-align: right;
+      @include span-columns(7);
+    }
+  }
+  .copy--center {
+    vertical-align: middle;
+    text-align: left;
+    @include media($desktop) {
+      text-align: center;
+      padding: 0 modular-scale(7);
+    }
+    h2.subheader {
+      margin-bottom: 0 !important;
+    }
+  }
+}
+
+.two-width-row {
+  @include ma-columns(2);
+  .column {
+    padding: 0 modular-scale(2);
+  }
+}
+
+.three-width-row {
+  @include ma-columns(3);
+  .column {
+    padding: modular-scale(2);
+    img {
+      width: 70%;
+      margin-bottom: modular-scale(1);
+    }
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+  @include media($desktop) {
+    .column {
+      margin-bottom: 0;
+      img {
+        width: 100%;
+        margin-bottom: 0;
+      }
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.four-width-row {
+  @include ma-columns(4);
+  .column {
+    padding: modular-scale(3);
+  }
+}
+
+.five-width-row {
+  @include ma-columns(5);
+  .column {
+    padding: 0 modular-scale(1);
+  }
+}
+
+.row-with-borders {
+  .column {
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      left: 20%;
+      right: 20%;
+      bottom: 1px;
+      height: 1px;
+      background-color: $light-gray;
+    }
+    &:last-of-type:after {
+      display: none;
+    }
+  }
+  @include media($desktop) {
+    .column {
+      &:after {
+        top: 20%;
+        bottom: 20%;
+        right: 1px;
+        left: auto;
+        width: 1px;
+        height: auto;
+      }
+    }
+  }
+  //corrections for repeated row-with-borders
+  & + .row-with-borders {
+    .column:first-of-type:before {
+      content: "";
+      position: absolute;
+      left: 20%;
+      right: 20%;
+      top: 1px;
+      height: 1px;
+      background-color: $light-gray;  
+    }
+    @include media($desktop) {
+      .column:first-of-type:before {
+        display: none;
+      }
+    }
+  }
+}
+
+.backgrounded .row-with-borders .column:after {
+  background-color: rgba($white, 0.6);
+}
+
+.image-grid-row {
+  @include ma-row;
+  img {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    @include span-columns(6);
+    padding: modular-scale(1);
+    &:nth-child(2n) {
+      padding-right: 0;
+    }
+    &:nth-child(2n + 1) {
+      padding-left: 0;
+    }
+    &:first-child {
+      padding-left: 0;
+    }
+  }
+  @include media($desktop) {
+    img {
+      @include span-columns(4);
+      &:nth-child(2n) {
+        padding-right: modular-scale(1);
+      }
+      &:nth-child(2n + 1) {
+        padding-left: modular-scale(1);
+      }
+
+      &:nth-child(3n) {
+        padding-right: 0;
+      }
+      &:nth-child(3n + 1) {
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+.form-row {
+  @include ma-row(table);
+  text-align: left;
+}
+
+.radio-table-row {
+  text-align: center;
+  margin-bottom: $base-line-height;
+}

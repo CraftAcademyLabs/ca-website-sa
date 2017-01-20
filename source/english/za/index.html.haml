@@ -1,0 +1,16 @@
+- description 'Learn coding and web development in three months. Craft Academy is an intensive, practical and focused training where students learn programming in Ruby, Javascript, HTML5, and CSS, among others. We offer training on-location in Gothenburg and Stockholm and around the world by distance.'
+%section.hero-splash{style: "background-image: url(#{image_path('backgrounds/splash_1.jpg')});"}
+  .container
+    .centered-row
+      %h4.leader Are you ready to challenge yourself?
+      %h1
+        = 'Coding as a craft in twelve weeks'.html_safe
+      %p{style: 'max-width: 29em;'}
+        %strong
+          With Craft Academy, you'll learn web development in an exciting, fast-paced environment and get help to find your first job or build your own project.
+
+= partial :'../partials/intro_za'
+= partial :'../partials/full_graduates_en'
+= partial :'../partials/who_is_it_for'
+= partial :'../partials/course_dates', locals: { language: :en }
+= partial :'../partials/apply' # This should be in the footer

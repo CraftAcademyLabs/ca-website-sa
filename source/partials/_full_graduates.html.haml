@@ -1,0 +1,23 @@
+%section.full-slider
+  .slider
+    - find_graduates(locals.fetch(:category, nil)).each do | grad |
+      .slide
+        .container
+          .profile-row
+            .image.show-desktop
+              = image_tag("people/#{grad[:image]}")
+            .copy
+              %h4.leader= "Examinerades #{grad[:cohort_month]} #{grad[:cohort_year]}"
+              %h2= "#{grad[:first_name]} #{grad[:last_name]}"
+              %h4.subheader= grad[:summary]
+              %blockquote= grad[:testimonial]
+              .button-row.shift-to-bottom
+                %p
+                  - if grad[:case_study]
+                    = link_to "Läs #{possessivize_se(grad[:first_name])} historia", "/case-studies/#{graduate_slug(grad)}", class: "button button--horizontal"
+                  - elsif grad[:case_study_link]
+                    = link_to "Läs #{possessivize_se(grad[:first_name])} historia", grad[:case_study_link], class: "button button--horizontal", target: "_blank"
+                  - if grad[:blog_link]
+                    = link_to "Besök #{possessivize_se(grad[:first_name])} blogg", grad[:blog_link], class: "button button--horizontal", target: "_blank"
+            .image.hide-desktop.no-padding
+              = image_tag("people/#{grad[:image]}")

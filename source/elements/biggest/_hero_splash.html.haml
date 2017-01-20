@@ -1,0 +1,7 @@
+%section.hero-splash{style: "background-image: url(#{image_path("backgrounds/dan-and-students-overhead-70.jpg")});"}
+  .container
+    .centered-row
+      = image_tag "logo/graphic_only_logo_white.png", class: "logo"
+      %h1 Learn to code in 12 weeks
+      %p= lorem.sentences(5)
+    = partial :"email-capture"

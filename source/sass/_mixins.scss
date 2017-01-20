@@ -1,0 +1,112 @@
+// Hide content for mobile devices
+@mixin ma-hide-mobile {
+  @include media($mobile) {
+    display: none;
+  }
+}
+
+@mixin ma-row($display: block) {
+  @include row($display);
+  margin-bottom: ma-spacing(1);
+  &:last-child {
+    margin-bottom: -1px; // fix for last-child in Chrome, no ill effects in other browsers
+  }
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@mixin ma-container($local-max-width: $max-width) {
+  @include clearfix;
+  padding-left: modular-scale(1);
+  padding-right: modular-scale(1);
+  @include media($desktop) {
+    @include outer-container($local-max-width);
+  }
+}
+
+// Sets up a responsive grid for the number of $rows
+// On mobile the columns will just all be inline
+@mixin ma-columns($rows) {
+  @include ma-row(table);
+  .column {
+    @include media($desktop) {
+      @include span-columns($grid-columns / $rows);
+    }
+  }
+}
+
+// Generate linea arrow icon
+@mixin ma-arrow-icon($arrow) {
+  font-family: "linea-arrows-10" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: $arrow;
+}
+
+// Generate hamburger
+@mixin icon-hamburger {
+  font-family: "linea-arrows-10" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\e032";
+}
+
+@mixin ma-unordered-list {
+  list-style-type: disc;
+  margin-bottom: $base-spacing;
+  padding-left: $base-spacing;
+  text-align: left;
+}
+
+// Generates correct vertical rhythm for header elements
+//
+// Step is how many steps on the modular scale
+// so if you want modular-scale(3) as the font size, pass in 3
+@mixin ma-header($step, $margin-lines: 1) {
+  @include ma-font-size($step);
+  margin-bottom: $base-line-height * $margin-lines;
+
+  @include media($desktop) {
+    @include ma-font-size($step + 1);
+  }
+}
+
+@mixin ma-font-size($step, $lineheight: true) {
+  $font-size: modular-scale($step);
+  $lines: ceil(strip-units($font-size / $base-line-height));
+
+  font-size: $font-size;
+  @if $lineheight {
+    line-height: $lines * $base-line-height;
+  }
+}
+
+@mixin ma-line-height($step) {
+  line-height: strip-units(modular-scale($step)) * $base-line-height;
+}
+
+@mixin border-after {
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    background-color: $light-gray;
+  }
+}

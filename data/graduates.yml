@@ -1,0 +1,85 @@
+- first_name: Lucia
+  last_name: De Mojà
+  image: Lucia-400.png
+  summary: Utbildad molekylärbiolog
+  testimonial: Rådet jag vill ge till framtida studenter är att aldrig ge upp. Det är värt att hålla sig fast eftersom resultaten kommer i slutet.
+  cohort_month: September
+  cohort_year: 2016
+  blog_link: 'https://medium.com/@luciademoja'
+  categories:
+    - career changer
+    - female
+  case_study:
+    - question: Kan du berätta lite om vem du är och vad du jobbat med tidigare?
+      answer: Jag heter Lucia och är 28 år gammal. Jag är utbildad molekylärbiolog som har pluggat djur- och naturvetenskap sedan 2007. Jag har bott i Italien och Sverige, talar svenska, engelska och italienska och älskar att lära mig mer och mer varje dag.
+    - question: Under sommaren 2016 deltog du i en bootcamp som Craft Academy anordnade, vad fick dig att bestämma dig för att lära dig att koda?
+      answer: Efter att ha sökt jobb i ett par år som biolog, deltog jag i en bootcamp som Craft Academy anordnade. Bootcampen handlade om webbutveckling och jag bestämde mig att göra ett försök eftersom programmering alltid har varit ett ämne som jag brunnit för. Med bootcampen ville jag ge mig själv en chans att jobba hårt för att skaffa mig viktiga professionella kunskaper och känna mig stolt över mig själv.
+    - question: Vad skulle du säga var det viktigaste effekten av att du deltog på Craft Academy?
+      answer: Under Bootcampen lärde jag mig naturligtvis att koda, men den viktigaste kompetensen som jag tar med mig är utan tvivel min förbättrade kommunikationsförmåga. Jag har lärt mig att jobba i grupp och samarbeta med olika människor. Jag har fått möjlighet att hjälpa andra och själv be om hjälp, ställa frågor och vara med och ge konstruktiva råd.
+    - question: Vad skulle du säga var det mest utmanande med den utbildningsmodell som Craft Academy jobbar efter?
+      answer: Bootcampen sker under 12 veckor, det betyder att genom att delta i programmet måste man vara medveten och beredd på att det inte kommer att bli lätt! Man kommer säkert att bli stressad och trött, frustrerad och irriterad. Det svåraste är att fortsätta kämpa och plugga även när man känner att man inte orkar längre.
+    - question: Vilket råd skulle du ge någon som funderar på att vara med på en Bootcamp?
+      answer: Det enda rådet jag vill ge till framtida studenter är att aldrig ge upp. Ibland kan det se ut som att dina kurskamrater kan mer än dig eller att de lär sig saker snabbare, men varje människa lär sig på sitt eget sätt och om du blir antagen betyder det att du KAN klara kursen. Fortsätt kämpa, never give up. Det är värt att hålla sig fast eftersom resultaten kommer i slutet.
+
+- first_name: Bo
+  last_name: Mattsson
+  image: Bosse-400.png
+  summary: Serieentreprenör ut i fingerspetsarna
+  testimonial: Jag har klart lättare att förstå hur något är byggt
+  cohort_month: November
+  cohort_year: 2015
+  categories:
+    - career changer
+  case_study:
+    - question: Kan du berätta lite om vem du är och vad du jobbat med tidigare?
+      answer: Jag heter Bo Mattsson, är 55 år gammal, gift med Eva sedan Hedenhös och vi har tre vuxna barn tillsammans. Jag jobbade i finanssvängen fram till 1997 (ansvarig för Swedbank Securities och var bl a där pappa till Europas första internetlösning för aktiehandel, NetTrade), och blev därefter entreprenör och har idag tre företag som jag grundat eller medgrundat, och som vi sedermera har sålt (Eurotrade, Mangold, samt Cint), där Cint såldes så sent som i december 2015 till Nordic Capital.
+    - question: Under hösten 2015 deltog du i en bootcamp som Craft Academy anordnade, vad fick dig att bestämma dig för att lära dig att koda?
+      answer: Dels så gillar jag att lära mig nya saker, per definition (även om jag fuskat litet under 1970-talet med kodning), och dels så tror jag att det är nyttigt att åtminstone ha ett hum om hur kommunikationen på nätet faktiskt fungerar, oavsett device. Det har jag nytta av i den egna verksamheten och dessutom så blir jag nyttigare för andra i samband med investeringar etc.
+    - question: Vad skulle du säga var det viktigaste effekten av att du deltog på Craft Academy?
+      answer: Jag har klart lättare att förstå hur något är byggt och vilka problemställningar de har ställts inför, att se koden gör det också lättare för mig att värdera de människor som påstår något om något.
+    - question: Vad skulle du säga var det mest utmanande med den utbildningsmodell som Craft Academy jobbar efter?
+      answer: Är man inte beredd att lägga all tid på kodning medan man går kursen, så bör man nog fundera en gång till.
+    - question: Vilket råd skulle du ge någon som funderar på att vara med på en Bootcamp?
+      answer: Enkelt. Lägg all tid och all fokus på detta under den tid det varar. Ät, sov, skit kod, helt sonika. Fråga mycket, se till att du förstår innan du släpper greppet och går vidare. Se dock till att aldrig ställa samma fråga två gånger av ren slöhet (finns inget som retar en lärare så mycket som slöa elever...).
+
+- first_name: Mikael
+  last_name: Feher
+  image: Mikael-400.png
+  summary: Med kod som passion
+  testimonial: Att vara med på en Bootcamp är ungefär som att dricka vatten från en brandslang. Men nu har jag färdigheter som gör det möjligt för mig att göra det jag älskar, nämligen att koda.
+  cohort_month: September
+  cohort_year: 2016
+  categories:
+    - career changer
+  case_study:
+    - question: Kan du berätta lite om vem du är och vad du jobbat med tidigare?
+      answer: Jag är en 39 årig gift småbarnsförälder med karriär som både lokförare och ordningsvakt bakom mig.
+    - question: Under sommaren 2016 deltog du i en bootcamp som Craft Academy anordnade, vad fick dig att bestämma dig för att lära dig att koda?
+      answer: När jag bestämde mig för att satsa på en IT karriär så började jag plugga IT-Säkerhet och det var under den utbildningen som jag provade på att koda. Från att lära mig lite kod som komplement till säkerhetsdelen fastnade jag fullständigt för programmering. Jag kände att kodandet var det enda jag ville hålla på med. Bootcampsformen gav mig allt jag ville ha av en utbildning; en utmanande utbildning som var kort.
+    - question: Vad skulle du säga var det viktigaste effekten av att du deltog på Craft Academy?
+      answer: Att jag på endast 3 månader fick tillräckliga kunskaper för att kunna programmera egna applikationer och att kunna jobba som utvecklare.
+    - question: Vad skulle du säga var det mest utmanande med den utbildningsmodell som Craft Academy jobbar efter?
+      answer: Den enorma mängden information och kunskap som skall införskaffas i ett extremt högt tempo. Ungefär som att dricka från en brandslang.
+    - question: Vilket råd skulle du ge någon som funderar på att vara med på en Bootcamp?
+      answer: Tänk igenom det extremt noggrant och sen tänk igenom det en massa gånger till! Bootcampet kräver en enorm uppoffring i tid, engagemang och frustration. Om du inte är beredd att lägga all din vakna tid på bootcampet så slösar du bort din tid. 12 veckor är inte lång tid så det gäller att köra hårt för att det skall löna sig. Jag offrade 3 månader av mitt liv, men nu har jag färdigheter som gör det möjligt för mig att göra det jag älskar, nämligen att koda.
+
+- first_name: Gustaf
+  last_name: Rudholm
+  image: Gustaf-400.png
+  summary: Från e-handel till kodning på heltid
+  testimonial: Jag har svårt att se många bättre sätt att “framtidssäkra” sig själv
+  cohort_month: November
+  cohort_year: 2015
+  categories:
+    - career changer
+  case_study:
+      - question: Kan du berätta lite om vem du är och vad du jobbat med tidigare?
+        answer: Jag heter Gustaf Rudholm, är 34 år gammal och jag har jobbat med e-handel sedan innan förra it-craschen. Jag började min bana på elektronikkedjan NetOnNet 1999 och där blev jag kvar i sju år. Med mig fick jag en massa nyttiga erfarenheter inom digital handel och affärsmannaskap. 2006 började min bana som entreprenör då jag sa upp mig från tryggheten och startade RUM21.se, en möbelbutik på nätet. 2011 tog jag in CDON Group som delägare och 2014 sålde jag hela mitt innehav till Royal Design Group. Jag är även medgrundare till CareOfCarl.com, en av nordens ledande butiker för herrkläder på nätet.
+      - question: Under hösten 2015 deltog du i en bootcamp som Craft Academy anordnade, vad fick dig att bestämma dig för att lära dig att koda?
+        answer: Jag har alltid fascinerats av hur man kan bygga digitala produkter bara med hjälp av en massa siffror, bokstäver och kreativitet. Även om jag inte hade skrivit kod själv förut så hade jag upphandlat många digitala produkter och tjänster och förstod nyttan i att lära mig mer på området.
+      - question: Vad skulle du säga var det viktigaste effekten av att du deltog på Craft Academy?
+        answer: Att jag nu kodar mer eller mindre på heltid och gör saker som jag bara kunde drömma om att göra innan jag gick bootcampen. Jag var otroligt nära att inte våga ta steget men nu kan jag inte ens förstå hur jag kunde tveka. De 12 veckorna visade sig vara en av de bästa investeringarna jag har gjort i mig själv!
+      - question: Vad skulle du säga var det mest utmanande med den utbildningsmodell som Craft Academy jobbar efter?
+        answer: Att man under utbildningen konstant lever med känslan av att man ligger steget efter och inte fattar. Så snart man börjat få kläm på något får man genast dubbelt så många nya saker att sätta sig in, och så håller det på. Tempot är högt och man måste verkligen vara på tå hela tiden. För mig var det först när utbildningen var klar och jag började ta små trevande steg mot att bygga min första egna applikation som jag fattade hur mycket jag hade lärt mig. Men då var det verkligen en häftig känsla!
+      - question: Vilket råd skulle du ge någon som funderar på att vara med på en Bootcamp?
+        answer: Bara gör det! Jag har svårt att se många bättre sätt att “framtidssäkra” sig själv. Oavsett om du i framtiden jobbar som utvecklare eller inte så kommer du ha stor nytta av erfarenheterna från Craft Academy. Jag ser det som att kod är ett globalt språk, lika viktigt att förstå som engelska. Utan den förståelsen kommer det att vara väldigt svårt att hänga med på en framtida arbetsmarknad.

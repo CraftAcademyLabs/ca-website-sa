@@ -1,0 +1,109 @@
+- @params = {}
+%section.hero{style: "background-image: url(#{image_path("backgrounds/student-concentrating.jpg")});"}
+  .container
+    .centered-row
+      %h1 Apply to Craft Academy
+      %p Come and join us at Craft Academy and before you know it you'll be a coder!
+%section
+  .container.container--narrow
+    .form-row
+      %form{method: "post"}
+        %fieldset
+          %input{type: "hidden", name: "course_type", value: "Offline"}
+          .input-row
+            %label{for: "first_name", class: "required"}
+              First name
+            %input{type: "text", required: true, name: "first_name", id: "first_name", value: @params[:first_name]}
+          .input-row
+            %label{for: "last_name", class: "required"}
+              Last name
+            %input{type: "text", required: true, name: "last_name", id: "last_name", value: @params[:last_name]}
+          .input-row
+            %label{for: "email", class: "required"}
+              Email address
+            %input{type: "email", required: true, name: "email", id: "email", value: @params[:email]}
+          .input-row
+            %label{for: "phone_number", class: "required"}
+              Phone number
+            %input{type: "tel", required: true, name: "phone_number", id: "phone_number", value: @params[:phone_number]}
+        %fieldset
+          %legend
+            %span If accepted, which class would you like to attend?
+          .radio-table-row
+            %table{class: "radio-table"}
+              %thead
+                %tr
+                  %th &nbsp;
+                  %th Pre-Course Start
+                  %th Course Start
+                  %th Course End
+              %tbody
+              - Intake.future_dates.each do |intake|
+                - checked = @params.fetch(:to_join, []).include?(intake.start_date)
+                - input_id = "to_join_#{intake.start_date}"
+                %tr{class: checked ? 'active' : ''}
+                  %td
+                    %input{id: input_id, type: 'radio', name: "to_join[]", value: intake.start_date, checked: checked, required: true}
+                  %td
+                    =intake.precourse_start_date
+                  %td
+                    %label{for: input_id}
+                      =intake.start_date
+                  %td
+                    =intake.end_date
+        %fieldset
+          %legend
+            %span
+              Let's talk a little bit more about you
+
+          .input-row
+            %label{for: "why_attend", class: "required"}
+              Why do you want to attend Craft Academy?
+            %p.input-hint
+              Build the next Facebook? Change the world? Quit a boring job and start an exciting career? Make lots of money as a software developer? Just because you like coding?
+              %span.small (80 - 250 words)
+            %textarea{required: true, name: "why_attend", class: "wordcount", id: "why_attend", value: @params[:why_attend]}
+            %p.input-feedback
+              %span.input-warning You have 200 words
+
+          .input-row
+            %label{for: "computer_skills", class: "required"}
+              How have you learnt to code so far?
+            %p.input-hint
+              If you can't code, it won't count against you: all you need is passion and the ability to unlearn the word "quit."
+              %span.small (80 - 250 words)
+            %textarea{required: true, name: "computer_skills", class: "wordcount", id: "computer_skills", value: @params[:computer_skills]}
+            %p.input-feedback
+              %span.input-success You have 200 words
+
+          .input-row
+            %label{for: "how_did_you_hear_about_us", class: "required"}
+              How did you hear about us?
+            %p.input-hint
+              Purely for marketing reasons. If you heard about us through multiple channels, choose the one that influenced your decision the most.
+            %select{required: true, name: "how_did_you_hear_about_us", id: "how_did_you_hear_about_us"}
+              %option{value: ''} Select an option&hellip;
+              %option{value: 'Google', selected: @params[:how_did_you_hear_about_us] == 'Google'} Google
+              %option{value: 'Twitter', selected: @params[:how_did_you_hear_about_us] == 'Twitter'} Twitter
+              %option{value: 'Facebook', selected: @params[:how_did_you_hear_about_us] == 'facebook'} Facebook
+              %option{value: 'Quora', selected: @params[:how_did_you_hear_about_us] == 'Quora'} Quora
+              %option{value: 'The Student Room', selected: @params[:how_did_you_hear_about_us] == 'The Student Room'} The Student Room
+              %option{value: "Don't Panic", selected: @params[:how_did_you_hear_about_us] == "Don't Panic"} Don't Panic
+              %option{value: 'Techendo', selected: @params[:how_did_you_hear_about_us] == 'Techendo'} Techendo
+              %option{value: 'Switchup', selected: @params[:how_did_you_hear_about_us] == 'Switchup'} SwitchUp
+              %option{value: 'Bootcamper.io', selected: @params[:how_did_you_hear_about_us] == 'Bootcamper.io'} Bootcamper.io
+              %option{value: 'Guardian coverage', selected: @params[:how_did_you_hear_about_us] == 'Guardian coverage'} Guardian coverage
+              %option{value: 'Telegraph coverage', selected: @params[:how_did_you_hear_about_us] == 'Telegraph coverage'} Telegraph coverage
+              %option{value: 'Independent coverage', selected: @params[:how_did_you_hear_about_us] == 'Independent coverage'} Independent coverage
+              %option{value: 'Bbc coverage', selected: @params[:how_did_you_hear_about_us] == 'BBC coverage'} BBC coverage
+              %option{value: 'Sky coverage', selected: @params[:how_did_you_hear_about_us] == 'Sky coverage'} Sky coverage
+              %option{value: 'Codecourses.co.uk', selected: @params[:how_did_you_hear_about_us] == 'Codecourses.co.uk'} Codecourses.co.uk
+              %option{value: 'One Month', selected: @params[:how_did_you_hear_about_us] == 'One Month'} One Month
+              %option{value: 'Reed', selected: @params[:how_did_you_hear_about_us] == 'Reed'} Reed
+              %option{value: 'Course Report', selected: @params[:how_did_you_hear_about_us] == 'Course Report'} Course Report
+              %option{value: 'Other media coverage', selected: @params[:how_did_you_hear_about_us] == 'Other media coverage'} Other media coverage
+              %option{value: 'Alumnus recommendation', selected: @params[:how_did_you_hear_about_us] == 'Alumnus recommendation'} Alumnus recommendation
+              %option{value: "Someone else's recommendation", selected: @params[:how_did_you_hear_about_us] == "Someone else's recommendation"} Someone else's recommendation
+          .button-row
+            %p
+              %input{type: "submit", value: "Submit Application", class: "button button--vertical button--large"}

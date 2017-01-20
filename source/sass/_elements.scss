@@ -1,0 +1,91 @@
+// overrides for elements.html.haml
+
+.the-elements {
+  padding-bottom: 0 !important;
+  aside#definition-top {
+    @include media($desktop) {
+      display: block;
+      margin: 0 auto;
+      .definition-links {
+        width: 100% !important;
+      }
+      text-align: center;
+      * {
+        text-align: center;
+      }
+    }
+  }
+}
+
+.elements {
+  .category {
+    background-color: #fafafa;
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
+  }
+  .element .tab-content {
+    background-color: #fff;
+  }
+  .definition-row .definition:last-child {
+    margin-bottom: 2px;
+    .category:after {
+      display: none;
+    }
+  }
+}
+
+.element > .tabs {
+  margin-bottom: 0;
+  & > li > .tab-content {
+    padding: 0;
+  }
+}
+
+.element-tabs {
+  padding: 0;
+  & > li > .tab-content {
+    padding: 0;
+    .category {
+      @include border-after;
+      padding: $base-spacing 0 0 0;
+      & > h4 {
+        text-align: center;
+        & + .definition > dt {
+          text-align: center;
+          margin-bottom: $base-spacing;
+        }
+      }
+    }
+  }
+  #definition-top + article {
+    border-top: 1px solid #ddd;
+  }
+}
+
+.element .tabs .tab-link {
+  background-color: transparent;
+  &.is-active {
+    background-color: #fff;
+    &.tab-link--code {
+      background-color: #f5f2f0;
+      border-bottom-color: #f5f2f0;
+    }
+  }
+}
+
+.tab-content--code {
+  padding: 0 !important;
+  background: $brand-secondary-color;
+  pre {
+    max-width: em(580);
+    margin: 0 auto;
+    overflow: scroll;
+    code {
+      white-space: pre-wrap;
+    }
+  }
+}
+

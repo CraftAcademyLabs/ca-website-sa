@@ -1,0 +1,170 @@
+# Answers should be written in Markdown - you'll need to add double line breaks
+# to get paragraphs and lists working properly e.g:
+#
+# One paragraph
+#
+#
+# Another paragraph - note the double spacing
+#
+#
+# * A bullet
+#
+# * Another bullet - note an extra spacing between each bullet too
+#
+- category_name: More About Makers
+  faqs:
+    - question: Why is it called Makers Academy?
+      answer: "Paul Graham, the tech startup visionary behind <a href='https://www.ycombinator.com/' target='_blank'>YCombinator</a> coined the term Maker for those individuals that truly produce. The Makers Academy mission is to give every student the skills to call themselves a Maker."
+
+    - question: Where does Makers Academy take place?
+      answer: "Makers Academy officially runs 9am to 6pm, Monday to Friday at the Makers Academy studio in Shoreditch at 50-52 Commercial St – right at the centre of the tech startup community, a few minutes away from Shoreditch High Street station and Google Campus. We welcome anyone who wants to <a href='http://www.calendly.com/ollieporter/15min' target='_blank'>arrange a visit</a>to see how we operate."
+
+    - question: Can I really learn to program in 12 weeks?
+      answer: "Absolutely. Programming expertise takes years to master, but that's not the point of Makers Academy. We want to give you a foundation so that you can be a top candidate for an entry-level position at a world class startup or technology company. Whether you're looking to change careers or you want to start your own startup but can't find a technical co-founder, Makers Academy is for you. To learn more about the underlying research, see this essay on <a href='http://www.startuprob.com/learn-to-code/' target='_blank'>Why Learning to Code is So Hard</a>."
+
+    - question: Do you help people navigate their way around getting housing in London?
+      answer: "At the moment we do not have a dedicated housing department but members of our team can assist you with finding short term accommodation in London. In the past students have used sites like Gumtree, Zoopla, Spareroom.co.uk and many others to find a house. In London it's pretty easy to find a room at short notice if you put your mind to it."
+
+    - question: Do you have hacking events?
+      answer: "Indeed we do. Sign up to our mailing list to be notified when tickets go on sale."
+
+    - question: How long has the service been running?
+      answer: "The company was formed in November 2012, and we ran our first course in February 2013."
+
+    - question: Can I come to see you?
+      answer: "Of course. Our doors are open for anyone to come and visit. Book an appointment with Ollie <a href='http://www.calendly.com/ollieporter/15min' target='_blank'>here</a>."
+
+- category_name: Applying to Makers
+  faqs:
+    - question: What percentage of applicants do you accept?
+      answer: "While we don't set specific limits on how many students we accept, typically about 10% of applicants end up studying at Makers Academy. We have a rigorous selection process, designed to find the most capable, driven and passionate people, and we aren't afraid to turn people away if we don't think they have what it takes to succeed at Makers Academy. It's not called \"Oxbridge meets the Marines, but for Developers\" for nothing!"
+
+    - question: What does the application process look like?
+      answer: "After submitting your online application, we'll invite you for an interview. In the interview we'll ask a few questions and do a bit of simple pair programming. You have no need to be afraid - we're not testing to see if you can already code. We're testing to see how you handle stressful situations where you're navigating the unknown. It'll be fun - we promise!"
+
+    - question: What can I do to improve my chances of getting a place on one of your courses?
+      answer: "In truth, there isn't a huge amount you can do to improve your chances at the interview stage. It's designed to find people who have natural intelligence, bags of drive and clear passion for learning to code. We're not testing what you do or don't know, we're looking mainly at whether you have the right mindset to benefit from a course like ours. A developer typically spends most of their working lives in 'the unknown', and we're trying to assess whether this is something you can handle, something you might even enjoy, and ultimately if it's something in which you can excel.
+
+
+  Having said that, if you do already have some coding experience, even if you only went through a few introductory tutorials, this will be to your advantage. We recommend the following resources to get started as a web developer, regardless of whether you want to join Makers Academy or not:
+
+
+    * <a href='http://www.codecademy.com/tracks/ruby' target='_blank'>Never seen Ruby before? Try out Ruby on Codecademy</a>
+
+    * <a href='http://learnrubythehardway.org/book/intro.html' target='_blank'>Done Codecademy already? Push yourself a little further with this book</a>
+
+    * <a href='https://rubymonk.com/learning/books/1-ruby-primer/chapters/6-objects/lessons/35-introduction-to-objects' target='_blank'>Didn't enjoy the style of the last link? This is another brilliant site for learning the basics of Ruby</a>"
+
+    - question: What’s the best way to prepare for the interview?
+      answer: "The interview is designed to test how you think, rather than what you know, but going through ‘Learn to Program’ by Chris Pine or the ‘Ruby Essentials’ course on <a href='http://www.lynda.com/' target='_blank'>lynda.com</a> will put you in a great position when it comes to the pair programming part of the interview."
+
+    - question: Do I need to know how to program already?
+      answer: "No. All you need is passion and the ability to unlearn the word 'quit'."
+
+    - question: If I already know how to program a little, is Makers Academy for me?
+      answer: "Absolutely. Makers Academy is more than just learning how to program — it's learning how to be a developer. It's learning how to build your own prototypes. It's learning where to go to find answers. It's learning about what the atmosphere of working in a startup is really like. It's learning to be a Maker from some of the best Makers in the world."
+
+    - question: What's the deal for International Students?
+      answer: "We welcome International Students. We've had people join us from France, Germany, The USA, even South Africa! The cost is the same wherever you're from and you apply in the normal way. Three important things to bear in mind: Firstly, you aren't able to get a student visa for Makers Academy as we haven't yet received the required accreditation. Secondly, we have partnered with Migreat.com to provide you with assistance on getting the right visa easily sorted. Migreat.com is like Skyscanner for immigration. In a few clicks, their visa tool will give you an idea of the visa you are eligible for and a to-do list of documents for you to come on board. Migreat has online contacts for a great number of immigration lawyers, for all types of budget and visa. If you are confused by the application documents, you can ask their immigration experts for a little help. The platform is all free to use and you can ask them to refer you to an expert to do your visa application directly on the platform - though this will come with a fee. Thirdly, you'll only be allowed to take the up-front payment plan."
+
+    - question: How much maths do I need to know?
+      answer: "It’s a bit of a cliche that coding is all about Maths (Computer Science is Maths heavy... Writing code, not so much!). In reality, anything above If/Else statements and simple AND/OR logic is done largely by the computer. It’s more important that you have the right sort of mentality, that you’re comfortable working in ‘the unknown’ and that you aren’t afraid to fail. So long as you have a rudimentary understanding of basic maths, you’ve got everything you need."
+
+    - question: Do you consider applications from outside the EU?
+      answer: "Absolutely. We’ve had students from all over Europe, the USA, Singapore, Hong Kong, South Africa, Pakistan, Australia, New Zealand and even Venezuela!"
+
+    - question: How many international students attend the program?
+      answer: "We don’t track the number specifically, but we’ve had students from all over Europe, the USA, Singapore, Hong Kong, South Africa, Australia, New Zealand and even Venezuela!"
+
+    - question: What if I have learning difficulties?
+      answer: "There is a huge spectrum of learning difficulties, and we would never generalize to say that any learning difficulty would make our course unattainable. We've had a number of students with dyslexia do very well on the course, but please feel free to get in touch to discuss your personal requirements. While we're not experts in this field, we will do everything we can to support anyone who is serious about learning to code."
+
+- category_name: More About The Course
+  faqs:
+    - question: Who are the instructors?
+      answer: "Makers Academy is taught by a cadre of world-class technologists and entrepreneurs. They have founded various technology startups and have decades of educational experience between them. In addition, Makers Academy brings in world class speakers from top London technology companies."
+
+    - question: Do you offer part-time courses?
+      answer: "Currently we only offer our full-time course because we don't believe we could deliver a world-class result on a part-time basis - yet. One of the main problems people have in teaching themselves to code is the inconsistency in learning. The 12-week program provides full immersion to overcome this barrier and we're not yet certain how we could deliver that with a part-time regiment...but we're working on it. Stay tuned!"
+
+    - question: Do I need to bring my own laptop?
+      answer: "No. Makers Academy will provide all of the equipment needed. That being said, feel free to bring your own laptop if you'd like as long as it's a Mac or a Linux (the software you'll be using is really hard to use on a PC)."
+
+    - question: Do you have to commit to being in London full-time for 12 weeks?
+      answer: "By far the best way to learn to code in such a short amount of time is to live and breathe it. You would need to attend Makers Academy from 9am-6pm, Monday-Friday, for the 12 weeks that you're studying. Bear in mind that this is a minimum requirement - the more time you give to the course the better the results will be! If you absolutely cannot make it to London, we have a new full-time online program that mirrors our off-line course. <a href='http://ronin.makersacademy.com/' target='_blank'>Find out more about our Ronin cohort</a>."
+
+    - question: What's the schedule and the learning atmosphere?
+      answer: "Students will be at Makers Academy from 9am until 6pm (although many stay well into the evening), Monday through Friday for the duration of the 12 week course. We use a combination of self-study, class-based instruction, hands-on exercises and pair programming to give you a well-rounded overview of how to apply each new concept."
+
+    - question: Do you have a more detailed breakdown of what I'll learn?
+      answer: "Our agile approach means we improve our course and curriculum with each cohort, but you can get a flavour of the structure from our <a href='http://www.makersacademy.com/curriculum' target='_blank'>curriculum</a>."
+
+    - question: Do students have to do a preliminary study before starting the course?
+      answer: "Yes. We have developed a part time PreCourse that needs to be completed before starting the course. We focus on the foundations: command-line, version control and the basics of Ruby. The PreCourse requires an average of 15-20 hours per week to complete successfully."
+
+    - question: Is it really possible to learn to code in 12 weeks?
+      answer: "The fact that we’ve had over 350 students graduate from Makers Academy, and our track record in getting students hired at companies like BSkyB, Pivotal Labs, New Bamboo and many other top tech companies mean that YES, it is possible to learn to code in 12 Weeks. Make no mistake - it will be tough. It will take hard work and dedication, but if you really want it, it’s there to be had."
+
+    - question: Why does the course focus on Ruby on Rails?
+      answer: "The course doesn’t just focus on Ruby on Rails. You'll learn a number of languages such as Ruby, HTML, CSS, JavaScript, jQuery and more, but you're right in saying that you will leave Makers Academy with Ruby as your strongest language. However, we focus much of our efforts on teaching you the skills to think like a Developer (note the capital D!), and our graduates have gone on to work in a number of programming languages after leaving Makers Academy."
+
+    - question: How much help is given when choosing a project?
+      answer: "In the final 2 weeks of the course, students work in teams on a project. In recent cohorts, we have even invited in charities to pitch their project ideas and this gives our students experience with real clients and time limits."
+
+    - question: Does the course look at any other programming languages such as Python or C#?
+      answer: "While you’ll get a taste of many languages while studying, we offer one course and one course only, and Ruby forms its backbone. If you’re sure that you want to learn a language like Python or C# then the course may not be for you."
+
+    - question: Does the course cover project management skills such as Agile methodologies?
+      answer: "We do touch on Agile working methodologies and even some Lean Startup principles, but this isn’t the main focus of the course, nor is design. You will learn some basic principles in all these areas, but this is primarily a course where you will learn to code."
+
+    - question: How satisfied are students after completing the program?
+      answer: "Our Net Promoter Score (as decided by feedback from Graduating Students over the past year) is 93. The highest you can get is a 100, and anything above 50 is considered to be ‘Excellent’."
+
+    - question: What is the drop out rate/failure of the course?
+      answer: "Out of around 350 students so far we have had around 25 drop out, for various reasons. We have an application/interview process at Makers Academy that is designed to only accept people who are serious about learning to code, but we can’t always get it right!"
+
+- category_name: Getting a Job
+  faqs:
+    - question: Do you offer any kind of post-graduation assistance?
+      answer: "Absolutely. We want to help in any way that we can - be that helping a student find their first (or second or third) position or just merely providing advice. We have built an extensive alumni network for all graduates. We now have a full time team to look after all post course arrangements and ensure you get a job."
+
+    - question: What is the target placement rate for coding positions?
+      answer: "While it's really complicated <a href='http://blog.makersacademy.com/charge-placement-fee/' target='_blank'>publishing our success metrics</a> we're committed to fully supporting you until you're happy in your new job as a developer."
+
+    - question: Do you offer any kind of certification at the end of the course?
+      answer: "No. Certifications would require us to bend our curriculum to a governing body, thus reducing our agility to teach what's most relevant and to stay at the bleeding edge of what's important to the technology community. Also, the employers pay little attention to certificates but they value the skills, so we focus on the latter."
+
+    - question: On average how quickly do graduates find a developer job after doing this course?
+      answer: "On average it takes 1-3 months to get a job after graduation."
+
+    - question: What level of training do we offer?
+      answer: "We train you to a level of proficiency that will allow you to build your own prototypes (if you’re an entrepreneur) or to get a job as Junior Developer."
+
+    - question: Which language is in demand the most?
+      answer: "The tech landscape moves fast. There are jobs available in every language - from C and Java right through Python and Ruby to Node and Clojure. With demand for Devs growing an average of 20% every year, and the supply of devs flatlining at 1% YoY, the reality is that if you’re a good programmer, you’ll always be in demand."
+
+    - question: Does the Academy provide any support to students who wish to establish their own startup?
+      answer: "We don’t offer any formal support but most of the team have extensive experience in startups and we're happy to talk to the students about their ideas."
+
+- category_name: Paying For The Course
+  faqs:
+    - question: I can't afford to do the course... What should I do?
+      answer: "There are a number of ways you can raise funds. Check our <a href='http://www.makersacademy.com/payment-plans' target='_blank'>payments page</a> to see how previous students have done this."
+
+    - question: Is food and lodging included in the price of tuition?
+      answer: "Unfortunately not. We will however assist with making arrangements in any way that we can – feel free to email us with any questions or requests that you may have."
+
+    - question: Why do I have to pay a deposit?
+      answer: "Due to high demand for spaces, we ask that, once accepted, students pay an £800 deposit to lock-down their spot on the course. This is to ensure that every place is taken by someone who actually intends to study at Makers Academy. Many courses end up with a waiting list and it isn't fair on waiting students for people to reserve a spot and not show up."
+
+    - question: What if I don't have the deposit?
+      answer: "Once a student is accepted on to the course, their spot will be guaranteed until 28 days before the course start-date. In this time the seat will not be offered to anyone else. If the deposit is not paid within 28 days of the course start-date, the spot will be opened up to students on the waiting list. While this doesn't necessarily mean that you will lose your seat, so long as you have not paid your deposit you're liable to be moved to a later cohort at any time."
+
+    - question: Do I need to buy books?
+      answer: "Everything you need will be provided by Makers Academy once you enroll."
+
+    - question: Can I pay in Bitcoin, if so how?
+      answer: "Yes - we welcome payment in Bitcoin. If you want to do so, we can talk about how to do so when you come for an interview."
+
+    - question: Is there any chance to get any type of scholarship?
+      answer: "We offer scholarships from time to time, usually in partnership with another company. By far the best way to hear about these things is by signing up to our newsletter and keeping an eye out for any new opportunities."

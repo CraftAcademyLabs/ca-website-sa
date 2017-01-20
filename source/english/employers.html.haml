@@ -1,0 +1,101 @@
+- description 'Do you need junior developers for your team? Look no further.'
+- title 'Employers'
+%section.hero-splash{style: "background-image: url(#{image_path('backgrounds/splash_3.jpg')});"}
+  .container
+    .centered-row
+      %h1 Junior Developers from Craft Academy
+      /%p 30 new candidates every 6 weeks
+    .button-row
+      %p
+        = link_to 'Hire Our Developers', 'https://makerssweden.typeform.com/to/SQcaqh', class: 'button button--vertical', target: '_blank'
+
+%section
+  .container
+    .centered
+      %h2 Ready for production?
+      %p.copy--left We strive to train junior developers who will seamlessly fit into a workplace, ready to hit the ground running and dive into real projects. We train not just competent coders, with a wide range of skills, but teammates, problem-solvers and leaders.
+    .three-width-row.centered-row
+      .column
+        = image_tag 'icons/icon-heart.png', class: 'image--small'
+        %h4 Passion
+        %p Driven, curious and engaged. Our students, by graduating from Craft Academy, have shown that they are in charge of their own development. By dedicating twelve weeks of their lives to learning to code - and putting their lives on hold - they have proven their desire to work in the field.
+      .column
+        = image_tag 'icons/icon-craft.png', class: 'image--small'
+        %h4 Competence
+        %p During their time at Craft Academy, our students learn at least two programming languages and three frameworks. They practice Test-Driven Development and work with Agile principles on a wide range of projects.
+      .column
+        = image_tag 'icons/icon-briefcase.png', class: 'image--small'
+        %h4 Experience
+        %p Everyone was a beginner once. What separates our students from other junior developers is that bootcamp participants begin writing code even before day one, and every day during the course. When they graduate, they have at least two fully-developed major projects in their portfolio.
+
+%section.backgrounded
+  .container
+    .row
+      %h2 Become a Hiring Partner
+      %h4 We recognize that the recruitment process is necessarily sensitive and specialized, and that it can be difficult to find someone you can trust on your team
+      %p.copy--left
+        Working with Craft Academy as a Hiring Partner doesn't mean you will simply receive a list of candidates. We believe that if potential employers develop a relationship with our students, they can get a great sense of their potential.
+        Our experience shows that the most engaged companies reap the greatest benefit from their partnership with Craft Academy. There are a number of ways to get involved, including lunch talks, posting to the job board, joining in with breakfast or happy hour social activities, and participation in graduation "demo days".
+%section
+  .container
+    .centered-row
+      %table
+        %thead
+          %h3 Our students learn
+          %tr
+            %th{style:'width: 33%' }
+
+            %th{style:'width: 33%' }
+              -# Tid
+            %th{style:'width: 33%' }
+              -# Hur ofta?
+        %tbody
+          %tr
+            %td{style: "vertical-align: top; !important"}
+              %h4 Ruby on Rails
+              %p.copy--left
+                Our students focus on building web applications with advanced technologies, creating polished products that could be used in the real world.
+              %p.copy--left
+                %strong Example:
+                Slow Food Online, a web application where users can order food from various menus, selecting dishes, adding them to their cart, and finally checking out. Restaurant owners set up and organize their online store.
+              -# %p.copy--left
+              -#   %strong Technologies:
+              -#   Ruby on Rails, Stripe, Devise, etc. etc.
+            %td{style: "vertical-align: top; !important"}
+              %h4 Soft Skills
+              %p.copy--left
+                Craft Academy students, from day one, are pushed not just to write great code, but to act like professionals in a work environment. They must meet deadlines, work in teams, pair program, lead and participate in Scrum meetings and tackle big projects with their colleagues. Unlike many other educational settings, our students graduate with a strong sense of what it is like to operate in a technical workplace. They will be an invaluable team member from day one.
+            %td{style: "vertical-align: top; !important"}
+              %h4 Test- and Behavior-Driven Development
+              %p.copy--left
+                One of the most important skills we teach our students is to test first and write code after. We drill into our students the importance of writing great tests and maintaining their test base as they proceed through a project. As the bootcamp proceeds, they learn the great value of having tests they can trust. This background makes them uniquely qualified to join teams who follow similar practices.
+          %tr
+            %td{style: "vertical-align: top; !important"}
+              %h4 Agile Practices
+              %p.copy--left
+                When they graduate, Craft Academy students are ready to tackle big projects - and know how to do the right thing at the right time. We practice with user stories, Agile planning tools like Pivotal Tracker and team organization with Scrum meetings and Stand-Ups. Students spend their time at Craft Academy aware that they are making software for a "client" and are trained to accept changing requirements as their products develop.
+            %td{style: "vertical-align: top; !important"}
+              %h4 Git and GitHub
+              %p.copy--left
+                Employees who do not have a strong command of Git practices can quickly bog down a team. That's why we focus on perfecting our students' Git and GitHub skills. We daily critique their practice, nudging them towards the highest professional level of version control and collaboration.
+            %td{style: "vertical-align: top; !important"}
+              %h4 Other Skills
+              %p.copy--left
+                By the time they graduate from Craft Academy, students will significant experience with:
+                %ul{style:"text-align: left"}
+                  %li Ruby and Rails
+                  %li Javascript, AngularJS and the Ionic mobile platform
+                  %li Continuous Integration and test coverage metrics
+                  %li Continous Deployment with Heroku or other services
+                // What should go here is a kitchen-sink list of all the stuff you teach us. This is our huge impressive list of things students learn to work with.
+
+%section.hero{style: "background-image: url(#{image_path('backgrounds/splash_3.jpg')});"}
+  .container
+    .centered-row
+      .column
+        %h4 Are you looking for great junior developers?
+        %h2 Become a Hiring Partner
+    .button-row
+      %p
+        // I've left this link to the information page, but it should just be an email link. Make it as easy as possible for people to contact you. With businesses, you definitely want to be talking to them immediately - personally, on the phone. Take this button away and just put your email and phone number.
+        = link_to 'Contact Us', config.hire_form_url, class: 'button button--vertical button--large', target: '_blank'

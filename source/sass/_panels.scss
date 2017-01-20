@@ -1,0 +1,58 @@
+// All panels (like alerts, errors, success, etc.)
+
+.panel {
+  @include ma-container;
+  padding: modular-scale(1) $base-spacing;
+  position: relative;
+  background-color: $light-gray;
+  & > p {
+    @include ma-row;
+    text-align: center;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+  a.close {
+    position: absolute;
+    right: $base-spacing;
+    top: modular-scale(1);
+    text-decoration: none;
+    color: darken($light-gray, 40%);
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+    font-size: modular-scale(2);
+    @include ma-font-size(2, false);
+    @include ma-line-height(0);
+    &:hover {
+      color: darken($light-gray, 50%);
+    }
+  }
+}
+
+.panel--success {
+  background-color: $success;
+  border-bottom: 3px solid darken($success, 20%);
+  p {
+    color: darken($success, 60%);
+  }
+  a.close {
+    color: darken($success, 30%);
+    &:hover {
+      color: darken($success, 40%);
+    }
+  }
+}
+
+.panel--alert {
+  background-color: $warning;
+  border-bottom: 3px solid darken($warning, 20%);
+  p {
+    color: darken($warning, 60%);
+  }
+  a.close {
+    color: darken($warning, 40%);
+    &:hover {
+      color: darken($warning, 50%);
+    }
+  }
+}

@@ -1,0 +1,114 @@
+// Navigation is hidden unless on desktop for the moment
+.mobile-navigation {
+  width: 100%;
+  left: 100%;
+  position: fixed;
+  z-index: 2;
+  left: 100%;
+  top: 0;
+  nav {
+    position: relative;
+    background: $brand-primary-color;
+    padding: ma-spacing(2);
+    width: 100%;
+    left: 0;
+    transition: all 0.2s ease-in-out;
+    height: 100vh;
+    overflow-y: scroll;
+    li {
+      padding: modular-scale(0) 0;
+      text-align: center;
+      border-bottom: 1px solid rgba($white, 0.4);
+      &:last-child {
+        border-bottom: none;
+      }
+      a {
+        text-decoration: none;
+        color: $white;
+        text-transform: uppercase;
+        letter-spacing: 0.25em;
+        &:hover {
+          color: $brand-secondary-color;
+        }
+      }
+    }
+  }
+  .nav-trigger-label {
+    position: absolute;
+    z-index: 3;
+    left: -1 * modular-scale(4);
+    top: 0;
+    cursor: pointer;
+    &:before {
+      color: rgba($white, 0.9);
+      font-size: modular-scale(4, $base-font-size);
+      @include icon-hamburger;
+      text-shadow: 0 0 1px $dark-gray;
+    }
+    &:hover:before {
+      color: rgba($white, 0.6);
+    }
+  }
+  .nav-trigger {
+    position: absolute;
+    z-index: 3;
+    visibility: hidden;
+    &:checked + nav {
+      left: -100%;
+    }
+  }
+  @include media($desktop) {
+    display: none;
+  }
+}
+
+header.navigation {
+  display: none;
+  @include media($desktop) {
+    display: block;
+    position: fixed;
+    width: 100%;
+    padding: ma-spacing(0.5) 0;
+    top: 0;
+    z-index: 999;
+    background: transparentize($base-background-color, 0.2);
+    border-bottom: $base-border;
+    transition: all 0.2s ease-in-out;
+    nav {
+      @include outer_container;
+      ul {
+        float: right;
+        margin-bottom: 0;
+        li {
+          display: inline;
+          font-size: 0.9rem;
+          text-align: right;
+          padding-right: $base-spacing * $perfect-fourth;
+          &.current a:after {
+            content: "";
+            position: absolute;
+            left:0;
+            right:0;
+            bottom:-1 * modular-scale(-3);
+            height: 2px;
+            background: rgba($brand-secondary-color, 0.6);
+          }
+        }
+        a {
+          text-decoration: none;
+          position: relative;
+          top: 3px;
+          &.button--vertical {
+            font-size: modular-scale(0);
+            top: 0;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+    &.hidden-nav {
+      transform: translateY(-87px);
+      -webkit-transform: translateY(-87px);
+    }
+  }
+}

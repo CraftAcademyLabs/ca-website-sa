@@ -1,0 +1,150 @@
+fieldset {
+  margin: 0 0 ma-spacing(1);
+  padding: ma-spacing(1) 0;
+  border: none;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+input,
+label,
+textarea,
+select {
+  display: block;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: $base-line-height * 0.4;
+  abbr {
+    display: none;
+  }
+}
+
+td {
+  label {
+    margin-bottom: 0;
+  }
+}
+
+#{$all-text-inputs},
+select[multiple=multiple],
+textarea {
+  border: $base-border;
+  border-radius: 8px;
+  box-shadow: $form-box-shadow;
+  box-sizing: border-box;
+  margin-bottom: ma-spacing(1);
+  padding: 0 $base-line-height;
+  transition: border-color;
+  width: 100%;
+  &:hover {
+    border-color: darken($base-border-color, 10%);
+  }
+  &:focus {
+    border-color: $action-color;
+    box-shadow: $form-box-shadow-focus;
+    outline: none;
+  }
+}
+
+textarea {
+  resize: vertical;
+  height: ma-spacing(9);
+  padding-top: $base-line-height;
+  padding-bottom: $base-line-height;
+}
+
+input[type="search"] {
+  @include appearance(none);
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline;
+  margin-right: ma-spacing(1) / 2;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+  line-height: $base-line-height * 2.5;
+  height: $base-line-height * 3;
+  color: grey !important;
+}
+
+legend {
+  span {
+    line-height: $base-line-height;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+    font-weight: 500;
+    margin: 0 0 $base-line-height;
+    @include ma-header(1);
+    color: $brand-primary-color;
+  }
+}
+
+input[type="file"] {
+  padding-bottom: ma-spacing(1);
+  width: 100%;
+}
+
+select {
+  margin-bottom: ma-spacing(1);
+  max-width: 100%;
+  width: auto;
+}
+
+// Alternative form color on darker background
+form.alt {
+  #{$all-text-inputs},
+  select[multiple=multiple],
+  textarea {
+    background: transparent;
+    border: $base-border;
+    color: $alt-font-color;
+  }
+  input[type="submit"] {
+    border: $base-border;
+    color: $alt-font-color;
+  }
+}
+
+
+.input-success {
+  color: $success;
+}
+.input-warning {
+  color: $warning;
+}
+.input-feedback {
+  margin-top: -1 * $base-line-height / 2;
+  &:last-child {
+    margin-bottom: $base-line-height;
+  }
+}
+.input-hint {
+  .small {
+    display: block;
+    margin-bottom: -1 * $base-line-height / 2;
+  }
+}
+.input-row {
+  select {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: $base-line-height;
+  }
+}
+
+form {
+  .button-row p {
+    text-align: center;
+  }
+}

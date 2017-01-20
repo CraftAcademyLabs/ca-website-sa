@@ -1,0 +1,47 @@
+%header{class: 'mobile-navigation', role: 'banner'}
+  %label{role: 'menu-trigger', for: 'nav_trigger', class: 'nav-trigger-label'}
+  %input{type: 'checkbox', id: 'nav_trigger', class: 'nav-trigger'}
+  %nav{role: 'navigation'}
+    .image--centered.image--small
+      = image_tag 'logo/graphic_only_logo_white.png'
+    - unless international_pages?
+      %ul.navigation-menu
+        %li{ class: current_if_current_page(current_page, '/') }
+          = link_to 'Hem', '/'
+        %li{ class: current_if_current_page(current_page, '/students/') }
+          = link_to 'Studenter', '/students.html'
+        %li{ class: current_if_current_page(current_page, '/employers/') }
+          = link_to 'Arbetsgivare', '/employers.html'
+        %li{ class: current_if_current_page(current_page, '/curriculum/') }
+          = link_to 'Läroplan', '/curriculum.html'
+        %li{ class: current_if_current_page(current_page, '/payment/') }
+          = link_to 'Priser'.mb_chars.upcase, '/payment.html'
+        %li
+          = link_to flag_image(:british), '/english'
+
+
+%header{class: 'navigation auto-hide', role: 'banner'}
+  %nav{role: 'navigation'}
+    = link_to image_tag('logo/ca_basic_logo_320x40.png'), '/', class: 'image--brand'
+    - if international_pages?
+      %ul.navigation-menu
+        %li{ class: current_if_current_page(current_page, '/apply/') }
+          = link_to 'Apply'.mb_chars.upcase, config.apply_sa_form_url, class: current_page_is_campaign_page? ? 'button button--horizontal' : 'button button--vertical', target: '_blank'
+    - else
+      %ul.navigation-menu
+        %li{ class: current_if_current_page(current_page, '/students/') }
+          = link_to 'Studenter'.mb_chars.upcase, '/students.html'
+        %li{ class: current_if_current_page(current_page, '/employers/') }
+          = link_to 'Arbetsgivare'.mb_chars.upcase, '/employers.html'
+        %li{ class: current_if_current_page(current_page, '/curriculum/') }
+          = link_to 'Läroplan'.mb_chars.upcase, '/curriculum.html'
+        %li{ class: current_if_current_page(current_page, '/payment/') }
+          = link_to 'Priser'.mb_chars.upcase, '/payment.html'
+        %li
+          = link_to flag_image(:british), '/english'
+        - if current_page.url == '/employers/'
+          %li{ class: current_if_current_page(current_page, '/apply/') }
+            = link_to 'Anställ'.mb_chars.upcase, config.hire_form_url, class: 'button button--vertical', target: '_blank'
+        - else
+          %li{ class: current_if_current_page(current_page, '/apply/') }
+            = link_to 'Ansök'.mb_chars.upcase, config.apply_form_url, class: current_page_is_campaign_page? ? 'button button--horizontal' : 'button button--vertical', target: '_blank'

@@ -1,0 +1,21 @@
+{
+  "name": "craftacademy_styles",
+  "version": "2.5.4",
+  "authors": [
+    "Craft Academy Engineering <info@craftacademy.se>"
+  ],
+  "main": [
+    "source/sass/all.scss",
+    "source/javascripts/all.js"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "*",
+    "!source/stylesheets/**",
+    "!source/sass/**",
+    "!source/fonts/**",
+    "!source/images/**",
+    "!source/javascripts/**"
+  ],
+  "dependencies": {}
+}

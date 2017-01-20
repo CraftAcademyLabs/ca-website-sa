@@ -1,0 +1,44 @@
+%section.no-padding-bottom
+  .centered-row
+    %h2 Bigger
+    %h4.subheader Groups of smaller components
+  .definition-row
+    %aside#definition-top
+      %nav.definition-links
+        %a.definition-link{href: "#definition-panel"} Panels
+        %a.definition-link{href: "#definition-success-panel"} Success Panels
+        %a.definition-link{href: "#definition-alert-panel"} Alert Panels
+        %a.definition-link{href: "#definition-responsive-table"} Responsive Table
+        %a.definition-link{href: "#definition-horizontal-tabs"} Horizontal Tabs
+        %a.definition-link{href: "#definition-vertical-tabs"} Vertical Tabs
+    %article
+      .category
+        %h4 Panel
+        %dl.definition{id: "definition-panel"}
+          %dt Big ol' panels. Sometimes dismissable, sometimes with error/success/notify messages
+          %dd= partial :"elements/element", locals: { partial_name: "elements/bigger/_panel" }
+      .category
+        %h4 Panel - success (dismissable)
+        %dl.definition{id: "definition-success-panel"}
+          %dt Dismissable success panel
+          %dd= partial :"elements/element", locals: { partial_name: "elements/bigger/_success_panel" }
+      .category
+        %h4 Panel - alert (dismissable)
+        %dl.definition{id: "definition-alert-panel"}
+          %dt Dismissable alert panel
+          %dd= partial :"elements/element", locals: { partial_name: "elements/bigger/_alert_panel" }
+      .category
+        %h4 Responsive Table
+        %dl.definition{id: "definition-responsive-table"}
+          %dt Tables with a totally excellent mobile experience
+          %dd= partial :"elements/element", locals: { partial_name: "elements/bigger/_responsive_table" }
+      .category
+        %h4 Horizontal Tabs
+        %dl.definition{id: "definition-horizontal-tabs"}
+          %dt Tabbed horizontal content
+          %dd= partial :"elements/element", locals: { partial_name: "elements/bigger/_tabs" }
+      .category
+        %h4 Vertical Tabs
+        %dl.definition{id: "definition-vertical-tabs"}
+          %dt Tabbed vertical content
+          %dd= partial :"elements/element", locals: { partial_name: "elements/bigger/_vertical_tabs" }

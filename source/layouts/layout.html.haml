@@ -1,0 +1,56 @@
+!!!
+%html
+  %head
+    <!--[if gt IE 8]><!-->
+    = stylesheet_link_tag 'all'
+    <![endif]-->
+    <!--[if lte IE 8]><!-->
+    = stylesheet_link_tag 'compatibility'
+    <![endif]-->
+    %meta{charset: 'utf-8'}/
+    %meta{content: 'ie=edge', 'http-equiv' => 'x-ua-compatible'}/
+    %meta{content: 'width=device-width, initial-scale=1', name: 'viewport'}/
+    / Always force latest IE rendering engine or request Chrome Frame
+    %meta{content: 'IE=edge,chrome=1', 'http-equiv' => 'X-UA-Compatible'}/
+
+    %link{href: image_path('favicons/favicon.ico'), rel: 'shortcut icon', type: 'image/x-icon'}/
+
+    - if international_pages?
+      = display_meta_tags site: 'Learn how to program in 12 weeks with Craft Academy'
+    - else
+      = display_meta_tags site: 'Programmering | Lär dig programmera på 12 veckor med Craft Academy'
+
+    = partial :'social_media_meta'
+
+    -unless current_page_is_sa?
+      = partial :'analytics_scripts'
+
+  %body{class: page_classes}
+    - if current_page_is_sa?
+      = partial :'google_tag_manager_sa'
+
+    = partial :'deprecated_browser_warning'
+    = partial :'navigation'
+
+    = yield
+    - unless current_page_is_campaign_page?
+      = partial :'footer'
+
+    = javascript_include_tag 'all'
+
+    - if international_pages?
+      = javascript_include_tag 'doorbell_sa'
+    - elsif current_page_is_sa?
+      = javascript_include_tag 'mailchimp_sa'
+    - else
+      = javascript_include_tag 'doorbell'
+      = javascript_include_tag 'mailchimp'
+
+    - if config.show_baseline_grid
+      %script{:src => 'http://files.keyes.ie/things/baseliner/baseliner-latest.min.js'}
+        :cdata
+      :javascript
+        window.onload = function() {
+            var baseliner = new Baseliner(27);
+            baseliner.toggle();
+        }

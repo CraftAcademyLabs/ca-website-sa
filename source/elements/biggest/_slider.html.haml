@@ -1,0 +1,34 @@
+
+%section.full-slider.no-padding
+  .slider
+    .slide
+      .container
+        .profile-row
+          .image.show-desktop
+            = image_tag("graduates/nicole.jpg")
+          .copy
+            %h4.leader= "Graduated December 2014"
+            %h2= "Nicole Pellicena"
+            %h4.subheader Marketing Manager to Junior Developer at Deloitte Digital
+            %blockquote The three words to describe Craft Academy are crazy, intense and awesome.
+            .button-row.shift-to-bottom
+              %p
+                = link_to "Read Nicole's story", "/case-studies/nicole-pellicena", class: "button button--horizontal"
+                = link_to "Visit Nicole's blog", "http://niccipell.wordpress.com", class: "button button--horizontal", target: "_blank"
+          .image.hide-desktop.no-padding
+            = image_tag("graduates/nicole.jpg")
+    .slide
+      .container
+        .profile-row
+          .image.show-desktop
+            = image_tag("graduates/ruth.jpg")
+          .copy
+            %h4.leader= "Graduated October 2014"
+            %h2= "Ruth Earle"
+            %h4.subheader Full-time Mum to Junior Developer at Mergermarket
+            %blockquote Craft Academy is an investment in yourself and to be honest, it’s quite cheap in the long run. It’s about you as a person and you are gaining skills that will be extremely useful for many, many years and when you look at it that way, it's actually a steal.
+            .button-row.shift-to-bottom
+              %p
+                = link_to "Read Ruth's story", "/case-studies/ruth-earle", class: "button button--horizontal"
+          .image.hide-desktop.no-padding
+            = image_tag("graduates/ruth.jpg")

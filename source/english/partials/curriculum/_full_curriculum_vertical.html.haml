@@ -1,0 +1,23 @@
+%section
+  .container
+    .centred-row
+      %h2 Weekly Plan
+      %p.copy--left
+        Application development is complex. One of the hardest challanges of learning to code is to decide what to learn, and in what order to learn it. Shall I first learn HTML, then Ruby? Or maybe start with Javascript, then Rails? There is an enormous wealth of tools and educational materials out there for the taking, but without a guide, it can be a wasteful and slow process.
+      %p.copy--left
+        Our course plan was developed by professional software engineers and is based on real-life projects, updated to the latest practices and industry standards. This guarantees that our students, at every point, are learning the most relevant skills possible.
+
+      %hr
+    .definition-row
+      %aside#definition-top
+        %nav.definition-links
+          - data.curriculum_weeks_en.each_with_index do |week, index|
+            %a.definition-link{href: "#definition-#{index}"}= week[:title]
+      %article
+        - data.curriculum_weeks_en.each_with_index do |week, index|
+          .category
+            %h4{id: "definition-#{index}"}= week[:title]
+            %dl.definition{id: slug(week[:title])}
+              %dt= week[:summary]
+              %dd
+                %p= week[:blurb]

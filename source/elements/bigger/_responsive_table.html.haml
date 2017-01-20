@@ -1,0 +1,13 @@
+%table.responsive-table
+  %thead
+    %tr
+      %th PreCourse Start
+      %th Course Start
+      %th Hiring Begins
+  %tbody
+    - Intake.future_dates.each do |intake|
+      %tr
+        %td{data:{header: "PreCourse Start"}}= intake.precourse_start_date.strftime("%-d %B %Y")
+        %td{data:{header: "Course Start"}}
+          %strong= intake.start_date.strftime("%-d %B %Y")
+        %td{data:{header: "Hiring Begins"}}= intake.end_date.strftime("%-d %B %Y")

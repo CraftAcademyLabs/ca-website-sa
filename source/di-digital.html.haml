@@ -1,0 +1,119 @@
+- description 'Jakten på nästa stora techsuccé. Den svenska internet- och startupscenen är hetare än någonsin. Framgångssagor som Skype, Klarna, Spotify och Mojang har satt Sverige på den digitala världskartan. Di-Digital ger sig ut på på jakt efter framtidens framgångssagor och Craft Academy följer med.'
+%section.hero-splash{style: "background-image: url(#{image_path('backgrounds/di_startup_tour_splash_1.png')});"}
+  .container
+    .centered-row
+      %h4.leader
+        Förbättra oddsen att lyckas med din Startup
+      %h1
+        = 'Lär dig koda på 12 veckor'.html_safe
+      %p
+        %strong
+          Craft Academy är Sveriges ledande programmerings bootcamp - en intensiv och krävande utbildning i hur man skriver kod och utvecklar applikationer.
+    .centered-row
+      %h4.leader
+        Nästa kursstart:
+        = Intake.future_dates.first.start_date.strftime('%-d %b %Y')
+
+%section.hero-splash-white{style: "background-image: url(#{image_path('backgrounds/startup-fade.jpg')});"}
+  .container
+    .centered-row
+      %article
+        %h2{style: 'color: #55bfcc;'}
+          = 'Är din startup Sveriges<br>nästa stora techsuccé?'.html_safe
+        %p.copy
+          Den svenska internet- och startupscenen är hetare än någonsin. En bred teknisk kompetens inom den egna organisationen ökar möjligheterna till framgång hos inversterare och kunder
+        %p.copy
+          %strong Med vår hjälp kan du se till att bygga upp kompetensen i ditt team och spela med säkra kort när du bygger din verksamhet.
+        %ul.copy
+          %li
+            %p.copy Du lär dig att angripa och lösa avancerade problem.
+          %li
+            %p.copy Du kommer att kunna testa nya idéer och anpassa dig till förändrigar.
+          %li
+            %p.copy Du kommer att kunna sätta upp realistiska tisdramar och planer
+          %li
+            %p.copy Din startup kommer att spara tid och pengar.
+          %li
+            %p.copy Din startup kommer att bli mer attraktiv för investerare och topptalanger
+        -#= link_to 'Läs mer', '/students', class: 'button button--horizontal'
+
+%section.no-padding-bottom.no-min-height
+  .container
+    .centered-row
+      %h2{style: 'color: #55bfcc;'} Möt tidigare deltagare
+      %p{style: 'max-width: 90% !important;'}
+        Deltagarna på våra bootcamps har ofta helt olika bakgrund. Från entreprenörer som vill utveckla sina egna produkter till de som är mitt i karriären och känner att det är dags för en ny utmaning. Alla har dock en sak gemensamt. De vill jobba med systemutveckling och de vill göra det nu - inte om tre år
+%section.full-slider{style: 'padding: 0px !important;'}
+  .slider
+    - find_graduates(locals.fetch(:category, nil)).each do | grad |
+      .slide
+        .container
+          .profile-row
+            .image.show-desktop
+              = image_tag("people/#{grad[:image]}")
+            .copy
+              %h4.leader= "Examinerades #{grad[:cohort_month]} #{grad[:cohort_year]}"
+              %h2{style: 'color: #55bfcc;'}
+                = "#{grad[:first_name]} #{grad[:last_name]}"
+              %h4.subheader= grad[:summary]
+              %blockquote= grad[:testimonial]
+              .button-row.shift-to-bottom
+                %p
+                  - if grad[:case_study]
+                    = link_to "Läs #{possessivize_se(grad[:first_name])} historia", "/case-studies/#{graduate_slug(grad)}", class: "button button--horizontal"
+                  - elsif grad[:case_study_link]
+                    = link_to "Läs #{possessivize_se(grad[:first_name])} historia", grad[:case_study_link], class: "button button--horizontal", target: "_blank"
+                  - if grad[:blog_link]
+                    = link_to "Besök #{possessivize_se(grad[:first_name])} blogg", grad[:blog_link], class: "button button--horizontal", target: "_blank"
+            .image.hide-desktop.no-padding
+              = image_tag("people/#{grad[:image]}")
+%section.hero-splash-white{style: "background-image: url(#{image_path('backgrounds/ipad-fade.jpg')});"}
+  .container
+    .centered-row
+      %article
+        %h4.leader Praktik framför teori
+        %h2{style: 'color: #55bfcc;'} Vår unika läroplan
+        %p.copy
+          Vi tror att traditionell utbildning lär människor att klara prov, snarare än att ge dem verklig kunskap. Vi har skapat en intensiv och praktiskt inriktad utbildning som ger dig en produktiv utvecklare på bara 12 veckor.
+        = link_to 'Vår läroplan', '/curriculum.html', class: 'button button--horizontal'
+
+= partial :'course_dates', locals: { color: '#55bfcc' }
+%section.hero-splash-white{style: "background-image: url(#{image_path('backgrounds/startup-2-fade.jpg')});"}
+  .container
+    .centered-row
+      %article
+        %h4.leader Bli en del av oss
+        %h2{style: 'color: #55bfcc;'} Allt detta ingår
+        %ul
+          %li
+            %h5
+              Förberedande kurs med stöd av coach.
+          %li
+            %h5
+              12 veckors utmaningsbaserad utbildning på heltid.
+          %li
+            %h5
+              Erfarna coacher på plats och på distans.
+          %li
+            %h5
+              Lån av MacBook Pro som studiedator.
+          %li
+            %h5
+              Lär dig efterfrågade utvecklingsmetoder som Agile och TDD.
+          %li
+            %h5
+              Moderna ramverk inkl. HTML5, JavaScript, Ruby on Rails, Angular JS och Ionic.
+          %li
+            %h5
+              Kreativ miljö på Chalmers Innovation, en av Sveriges ledande startup-hubbar.
+          %li
+            %h5
+              Föreläsningar, nätverksträffar och meetups.
+          %li
+            %h5
+              Kaffe, onsdagsfrukost och torsdagsfika.
+
+= partial :'apply', locals: {background_image: 'di_startup_tour_splash_2.png'}
+= partial :footer, locals: { color: '#55bfcc' }
+
+

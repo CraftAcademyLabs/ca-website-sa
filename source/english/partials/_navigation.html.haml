@@ -1,0 +1,20 @@
+%header{class: 'mobile-navigation', role: 'banner'}
+  %label{role: 'menu-trigger', for: 'nav_trigger', class: 'nav-trigger-label'}
+  %input{type: 'checkbox', id: 'nav_trigger', class: 'nav-trigger'}
+  %nav{role: 'navigation'}
+    .image--centered.image--small
+      = image_tag 'logo/graphic_only_logo_white.png'
+    %ul.navigation-menu
+      - if current_page_is_sa?
+        = partial :'english/partials/nav_menu_mobile_sa'
+      - else
+        = partial :'english/partials/nav_menu_mobile'
+
+%header{class: 'navigation auto-hide', role: 'banner'}
+  %nav{role: 'navigation'}
+    = link_to image_tag('logo/ca_basic_logo_320x40.png'), '/english', class: 'image--brand'
+    %ul.navigation-menu
+      - if current_page_is_sa?
+        = partial :'english/partials/nav_menu_sa'
+      - else
+        = partial :'english/partials/nav_menu'

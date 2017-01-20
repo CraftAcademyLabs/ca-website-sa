@@ -1,0 +1,32 @@
+:css
+  .elements { text-align: left; }
+
+%section.hero-splash.no-min-height{style: "background-image: url(#{image_path("backgrounds/elements.jpg")});"}
+  .container
+    .centered-row
+      %h4.leader.small-padding-top Craft Academy
+      %h1 Elements
+      %p All HTML components. Copy-paste this stuff to replicate.
+
+%section.the-elements
+  .centered-row
+    %ul.tabs.element-tabs
+      %li.tab-header-and-content
+        %a.tab-link.is-active{href: "#"} Little
+        .tab-content= partial :"elements/little"
+      %li.tab-header-and-content
+        %a.tab-link{href: "#"} Bigger
+        .tab-content= partial :"elements/bigger"
+      %li.tab-header-and-content
+        %a.tab-link{href: "#"} Biggest
+        .tab-content= partial :"elements/biggest"
+      %li.tab-header-and-content
+        %a.tab-link{href: "#"} Typography
+        .tab-content= partial :"elements/typography"
+      %li.tab-header-and-content
+        %a.tab-link{href: "#"} Forms
+        .tab-content= partial :"elements/forms"
+      %li.tab-header-and-content
+        %a.tab-link{href: "#"} Unsorted
+        .tab-content
+          %p= lorem.sentences(2)

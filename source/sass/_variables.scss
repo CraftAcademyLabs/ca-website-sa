@@ -1,0 +1,92 @@
+// Typography
+$futura: "futura-pt", Futura, $helvetica;
+$gotham-light: "gotham-light", $helvetica;
+$gotham-medium: "gotham-medium", $helvetica;
+
+$base-font-family: $gotham-light;
+$heading-font-family: $gotham-medium;
+$base-font-size: 16px;
+
+// Vertical rhythm set-up
+$em-base: $base-font-size;
+$modular-scale-ratio: $perfect-fourth;
+$modular-scale-base: rem($em-base);
+$base-line-height: 1.5rem;
+$base-spacing: $base-line-height;
+
+// Other Sizes
+$base-button-width: 10em;
+$mobile-nav-width: em(300);
+
+@mixin ma-header($step) {
+  $header-font-size: modular-scale($step);
+  $single_line: $base-line-height / $header-font-size;
+  $lines: ceil($base-font-size / $base-line-height);
+  font-size: $header-font-size;
+  line-height: $lines * $single_line;
+  margin-bottom: $single_line;
+}
+// Colors
+// palette from http://bit.ly/1dwLGKe
+// note all alt-colors are designed to show on a blue background
+$white: #FFFFFF;
+$light-gray: #ddd;
+$medium-gray: #afafaf;
+$dark-gray: #444;
+$black: #000;
+$navy: #062533;
+$sea-blue: #00333F;
+$off-white: #EFF7F2;
+$red: #AA1925;
+$green: #387358;
+$yellow: rgb(250,242,203);
+$success: $off-white;
+$warning: $yellow;
+$orange: #f28e24;
+
+$brand-primary-color: $orange;
+$brand-secondary-color: $navy;
+
+// Font Colors
+$base-background-color: $white;
+$alt-background-color: $sea-blue;
+$base-font-color: $dark-gray;
+$alt-font-color: $white;
+$action-color: lighten($sea-blue, 0.1);
+
+// Border
+$base-border-color: $light-gray;
+$alt-border-color: $white;
+$base-border-width: 2px;
+$base-border: $base-border-width solid $base-border-color;
+$base-border-radius: 2px;
+
+// Forms
+$form-box-shadow: none;
+$form-box-shadow-focus: none;
+$form-input-padding: modular-scale(-3);
+
+// Breakpoints
+$small-screen: 480px;
+$medium-screen: 640px;
+$large-screen: 1024px;
+
+$mobile: new-breakpoint(max-width $small-screen);
+$tablet: new-breakpoint(min-width $medium-screen, max-width $large-screen);
+$desktop: new-breakpoint(min-width $large-screen);
+
+// Navigation
+$navbar-height: ma-spacing(2);
+
+// Icons
+$left-arrow: "\e03f";
+$right-arrow: "\e04b";
+
+// Buttons
+$button-color: $brand-primary-color;
+$apply-button-color: $brand-primary-color; // Filled in button
+$alt-button-color: $alt-font-color;
+$button-border-radius: $base-border-radius * 4;
+
+// Layout
+$section-spacing: $base-line-height * 3;

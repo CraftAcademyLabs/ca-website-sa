@@ -1,0 +1,13 @@
+# Can now add any number of intakes. Past intakes are filtered out
+# automatically.
+- start_date: 20 July 2015
+  end_date: 9 October 2015
+
+- start_date: 12 October 2015
+  end_date: 15 January 2016
+
+- start_date: 18 January 2016
+  end_date: 8 April 2016
+
+- start_date: 23 May 2016
+  end_date: 1 July 2016

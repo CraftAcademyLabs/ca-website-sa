@@ -1,0 +1,73 @@
+- title: Precourse
+  summary: Allt du behöver inför kursstarten
+  blurb: "Du måste få en solid kunskapsbas att stå på inför själva kursen. Därför inleder vi campet med en förberedande del på 4 veckor. Under den förberedande kursen arbetar du på distans i ett nära samarbete med din coach och i team med andra deltagare. Du deltar i en till två fjärrmöten dagligen och förväntas kunna ägna mellan 15 till 20 timmar per vecka med att gå igenom material, lösa uppgifter och delta i parprogrammering."
+
+- title: Vecka 1
+  summary: Testdriven utveckling och introduktion till Ruby
+  blurb: Första veckans utmaning handlar om att bygga en enkel Bankomatsimulator. Låter kanske trivialt men utmaningen ligger i
+   att förstå hur en vardaglig situation kan se ut när man tänker i programmeringstermer och hur olika objekt interagerar med varandra.
+   Under veckan introducerar vi en mängd nya begrepp och koncept som lägger grunden för din fortsatta utveckling. Vi praktiserar par programmering
+   och test driven utveckling. Vi tampas med versionskontroll och rubyspråkets syntax. Vi introducerar även användarfokuserad synsätt för
+   programutveckling. Veckan avslutas med din första individuella Weekend Challenge.
+
+- title: Vecka 2
+  summary: Introduktion till JavaScript
+  blurb: Vi forsätter med att introducera ytterligare ett programmeringsspråk med tillhörande testverktyg - JavaScript och Jasmine.
+   Samtidigt går vi igenom grunderna i HTML och CSS och bygger en applikation som räknar ut din Body Mass Index (BMI challenge)
+   och publicerar vår första app på internet.
+
+
+- title: Vecka 3
+  summary: Parprogrammering och Användarorienterad utveckling
+  blurb: Vi inleder denna vecka med att lägga grunden för ett onlinesystem som låter användarna beställa mat online (SlowFood Challenge).
+   Vi introducerar ett ramverk för webbaserade applikationer (Sinatra) och ger deltagarna en första inblick i hur man jobbar med agila utvecklingsmetoder
+   med fokus på Behavior Driven Development.
+   SlowFood Challenge handlar även om designmönstret Model-View-Controller, relationsdatabaser och funktioner för användarregistrering, autentisering och auktorisering.
+   Vid veckans slut är vi redo att gå live med SlowFood Online och vi publicerar vårt system med hjälp av Heroku.
+   För att underlätta och automatisera vår deploy-process använder tekniker som Continuous Integration och Continuous Deployment."
+
+
+- title: Vecka 4
+  summary: Statiska siter och programmeringstekniker
+  blurb: Under den här veckan bygger vi en personlig site (Portfolio Challenge) med ramverket Middleman. Vi introducerar även HAML - en HTML markup
+   som underlättar skapandet och underhållet av HTML kod.
+   Vi introducerar mer avancerade JavaScript-baserade ramverk (jQuery) och CSS ramverk (Foundation, Bootstrap) och visat hur vi kan förbättra användarupplevelsen i våra applikationer.
+
+- title: Vecka 5
+  summary: Software as a Service med Ruby on Rails
+  blurb: Den här veckan introducerar vi deltagarna till Ruby on Rails - ett ramverk som hjälper programmeraren att följa designmönstret Model-View-Controller (MVC) och lär dem att jobba
+   efter grundprinciperna Convention Over Configuration (Konvention före konfiguration) och Don't Repeat Yourself (DRY) som går ut på att motverka duplicering av kod.
+   Vi introducerar också mer omfattande teststrategier och befäster deltagarnas kunskaper för hur de använder tester i sin utvecklingsprocess.
+   Vi forsätter med att fördjupa oss i Rails och går igenom mer avancerade tekniker för hur man använder externa bibliotek (gems), API'er, websockets, mm. "
+
+
+- title: Vecka 6
+  summary: Mid Course Project
+  blurb: Halvvägs genom kursen är det dags att omsätta dina kunskaper i praktik och släppa taget om coachens trygga vägledning.
+    Det är dags för dig att tänka ut, planera för, och bygga ditt eget projekt. Syftet är självklart att konsolidera dina kunskaper och börja bygga upp en egen projektportfölj.
+    Du jobbar i team och bestämma själva vilken kod ni ska skriva och vilka funktioner som ska utvecklas, men även fatta beslut om vilka planeringsverktyg ni vill använda och
+    när och hur man delegerar och fördelar arbetet. Det är teamet håller i spakarna - coacherna håller ett vakande öga för att se till att alla gör framsteg och hjälper till när det behövs.
+    Det är en stor vecka här på Craft Academy.
+
+
+- title: Vecka 7
+  summary: Mobila applikationer
+  blurb: Den här veckan fördjupar vi deltagarnas kunskaper inom JavaScript genom att introducera AngularJS, ett populärt front-end ramverk.
+    Vi tittar även på Ionic som är ett ramverk för utveckling av mobila applikationer utan att behöva arbeta med inhemska språk för iOS eller Android.
+    I slutet av veckan kommer du ha utvecklat och distribuerat två applikationer som kan ses på en mobil enhet.
+
+- title: Vecka 8, 9, 10
+  summary: Avancerad Rails, API'er och Agila utvecklingsmetoder
+  blurb: Allt handlar om att plocka på sig erfarenhet och kompetens (som vi definierar kunskap omsatt i praktik).
+   Under två veckor bygger vi en avancerad marketplace-applikation som en fortsättning på vår SlowFood utmaning.
+   Vi fördjupar oss i konceptet med API'r som hjälper oss att öppna upp vårt system för andra utvecklare, jobbar med mer avancerade planeringsverktyg,
+   följer de agila arbetsmetoderna och sjösäter en fullvärdig lösning.
+
+- title: Vecka 11 & 12
+  summary: Slutprojekt och Karriärhandledning
+  blurb: Vid det här läget är deltagarna mer eller mindre självgående och det är åter igen dags att omsätta förgående veckors kunskaper i praktisk tillämpning.
+   Deras produktportfölj kommer att utökas med ytterligare en applikation.
+   I grupper om tre till fyra jobbar de fram en så kallad minimum viable product (MVP) som de sätter i produktion på en egen virtuell server (Digital Ocean).
+   Samtidigt som du är med och jobbar på ditt slutprojekt under den sista veckan av kursen, flyttar vi fokus lite för att prata om karriär.
+   Du får en översyn av din portfölj och CV. Vi går igenom möjliga scenarios för anställningsprocessen och intervjun och håller flera gruppsamtal om din framtid som utvecklare.
+   På examensdagen korkar vi naturligtvis upp champagnen för att fira våra nya juniorutvecklare.

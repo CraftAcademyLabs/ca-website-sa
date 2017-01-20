@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,4BAA6B;EAC3B,gBAAgB,EAAE,OAAO;EACzB,OAAO,EAAE,IAAI;EACb,QAAQ,EAAE,KAAK;EACf,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,KAAK,EAAE,IAAI;EACX,UAAU,EAAE,KAAK;EACjB,OAAO,EAAE,cAAc;EACvB,SAAS,EAAE,IAAI;;AAGjB,8BAA8B;EAC5B,KAAK,EAAE,OAAO",
+"sources": ["../sass/_deprecated_browser_warning.scss"],
+"names": [],
+"file": "compatibility.css"
+}

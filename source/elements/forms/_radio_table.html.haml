@@ -1,0 +1,39 @@
+.radio-table-row
+  %table{class: "radio-table"}
+    %thead
+      %tr
+        %th &nbsp;
+        %th Pre-Course Start
+        %th Course Start
+        %th Course End
+    %tbody
+      %tr{class: ''}
+        %td
+          %input{id: '1', type: 'radio', name: "to_join[]", value: '13-08-15', checked: false, required: true}
+        %td
+          13th August 2015
+        %td
+          %label{for: '1'}
+            3rd September 2015
+        %td
+          4th December 2015
+      %tr{class: 'active'}
+        %td
+          %input{id: '2', type: 'radio', name: "to_join[]", value: '13-08-15', checked: true, required: true}
+        %td
+          13th August 2015
+        %td
+          %label{for: '2'}
+            3rd September 2015
+        %td
+          4th December 2015
+      %tr{class: ''}
+        %td
+          %input{id: '3', type: 'radio', name: "to_join[]", value: '13-08-15', checked: false, required: true}
+        %td
+          13th August 2015
+        %td
+          %label{for: '3'}
+            3rd September 2015
+        %td
+          4th December 2015

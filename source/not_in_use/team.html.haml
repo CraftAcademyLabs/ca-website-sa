@@ -1,0 +1,38 @@
+- description 'Members of our team.'
+%section.hero-splash{style: "background-image: url(#{image_path('backgrounds/splash_1.jpg')})"}
+  .container
+    .centered-row
+      %h1 Vårt Team
+      %p Vi är ett litet gäng med blandade kompetenser. Det som förenar oss är vår passion för och vilja reformera utbildning.
+
+%section.no-padding-top
+  .article--centered
+    %article
+      %h3 Vilka är vi?
+      %p
+        %span I vårt team finns prefesionella utvecklare med mångårig erfarenhet av:
+        systemutveckling, machine learning , utbildning, design, projektledning, startups, agila metoder, och vi älskar vårt uppdrag: att dela med .
+      %p If you're at a loose end around Commercial Street in London, come drop in: we'd love to meet you.
+      %p Without further ado, let's introduce the team.
+
+%hr
+
+%section.full-slider.no-padding
+  .slider
+    - data.team.each do | team_member |
+      .slide
+        .container
+          .profile-row
+            .image.show-desktop
+              = image_tag "team/#{team_member[:image]}"
+            .copy
+              %h2= team_member[:name]
+              %h4.subheader= team_member[:job_title]
+              %p= team_member[:about]
+              .button-row.shift-to-bottom
+                %p
+                  = link_to 'Bli en av oss', '/join-the-team.html', class: 'button button--horizontal'
+            .image.hide-desktop.no-padding
+              = image_tag "team/#{team_member[:image]}"
+
+= partial :apply

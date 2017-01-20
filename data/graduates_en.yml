@@ -1,0 +1,82 @@
+- first_name: Lucia
+  last_name: De Mojà
+  image: Lucia-400.png
+  summary: Molecular Biologist
+  testimonial: You have to keep going; the results come in the end
+  cohort_month: September
+  cohort_year: 2016
+  blog_link: 'https://medium.com/@luciademoja'
+  categories:
+    - career changer
+    - female
+  case_study:
+    - question: Can you talk a little bit about who you are and what your work has been until now?
+      answer: My name is Lucia and I am 28 years old. My background is in molecular biology and I have studied animal and natural sciences since 2007. I have lived in Italy and Sweden and speak Swedish, English and Italian. I love to learn new things every day.
+    - question: During the summer of 2016, you participated in the Craft Academy bootcamp. What made you decide to learn to code?
+      answer: After looking for a job as a biologist for two years, I enrolled at Craft Academy. I decided to give it a try because programming has always been a passion of mine. I signed up to give myself a chance to work hard, develop professional knowledge and feel proud of myself.
+    - question: What would you say was the most important result of your time with Craft Academy?
+      answer: During the bootcamp I learned to code, of course, but the most important experience, without doubt, was improving my communication skills. I learned how to work in a group and cooperate with different people and personalities. I have learned to help others and to ask for help, ask questions and give and receive constructive criticism.
+    - question: What would you say was the most challenging part of the training model at Craft Academy?
+      answer: The bootcamp takes place over 12 weeks, and you have to be prepared that it is not going to be easy! You will definitely be stressed out, tired, frustrated and irritated. The hardest thing is to continue working and studying even when you feel like you want to give up.
+    - question: What advice would you give someone who is thinking about enrolling in the bootcamp?
+      answer: The only advice I want to give to future students is to never give up. Sometimes it feels like your fellow participants are much better than you and that they are all learning faster than you. But everyone learns in their own way. If they accepted you into the course, it means you can do it! Continue fighting, never give up. It's worth the pain because the results come in the end.
+
+- first_name: Bo
+  last_name: Mattsson
+  image: Bosse-400.png
+  summary: Entrepreneur to the bone
+  testimonial: Now I understand how applications are built
+  cohort_month: November
+  cohort_year: 2015
+  categories:
+    - career changer
+  case_study:
+    - question: Can you talk a little bit about who you are and what your work has been until now?
+      answer: I'm Bo Mattsson. I'm 55, married, and we have three grown children. I worked in the finance industry until 1997 (responsible for Swedbank Securities and was, among other things, the creator of Europe's first online stock trader, NetTrade). After that, I became an entrepreneur and have founded or co-founded three companies, which I have subsequently sold (Eurotrade, Mangold and Cint). Cint was sold in December, 2015 to Nordic Capital.
+    - question: In the Fall of 2015, you participated in the Craft Academy bootcamp. What made you decide to learn to code?
+      answer: Partly because I like to learn new things (though I can't say it was exactly new, since I did a little coding in the 70s), and partly because I believe it's healthy to have at least a base understanding of how internet communication actually functions, regardless of device. I have the benefit of seeing directly and additionally become healthier . It's beneficial to have an understanding of how internet communication works. My own businesses benefit from that understanding, and it allows me to play a more engaged role with the companies in which I invest.
+    - question: What would you say was the most important result of your time with Craft Academy?
+      answer: I now understand much better how something is built and what problems the developers have faced. To understand the code makes it easier for me to value the people I hire to build something.
+    - question: What would you say was the most challenging part of the training model at Craft Academy?
+      answer: If you aren't ready to put all of your time into the course and learning to code, you should think again.
+    - question: What advice would you give someone who is thinking about enrolling in the bootcamp?
+      answer: Simple. Put all your time and focus into the course while you're there. Eat, sleep, shit code, period. Ask a lot of questions and make sure you understand something before you move on. Make sure you never ask the same question two times - it's lazy (and nothing irritates a coach as much as a lazy student).
+
+- first_name: Lara
+  last_name: Templemore-Walters
+  image: Lara-400.png
+  summary: Web Designer turned Web Developer
+  testimonial: Now, I just want to learn more!
+  cohort_month: September
+  cohort_year: 2016
+  categories:
+    - career changer
+  case_study:
+    - question: Can you talk a little bit about who you are and what your work has been until now?
+      answer: My name is Lara and I have been a web designer for over 18 years now (WOW that’s a long time). I have been using CMS like Joomla and WordPress to build my sites and then would outsource all my custom development. I was always so interested in watching my friends code or go through the custom code a developer had worked on for me, even though I had no clue what was going on it excited me and frustrated me.
+              So why didn’t I do my BSC degree you may ask, well, first of all, I didn’t have the funds and I am really not an academic, I am more a practical hands-on person.  But as internet trends have changed, the way we are able to learn online and gain knowledge over the years has given me the opportunity to fulfil a bucket list dream and learn how to code.
+    - question: During the summer of 2016, you participated in the Craft Academy bootcamp. What made you decide to learn to code?
+      answer: As mentioned above I was always envious of my fellow coding friends and colleagues, it has always been one my bucket list to learn how to code and when I saw the Facebook Ad for the Craft Academy bootcamp for South Africa, I jumped at the opportunity.
+    - question: What would you say was the most important result of your time with Craft Academy?
+      answer: The biggest effect for me is that I just want to learn more, it’s ignited a new passion inside of me and to become even better at my coding. The other important effect is the relationships I gained with my fellow coders they become my best friends and family throughout the bootcamp, I miss our coding sessions a lot.
+    - question: What advice would you give someone who is thinking about enrolling in the bootcamp?
+      answer: I didn’t find the training model challenging. It suited my style of learning. Maybe the time frame to complete tasks was the most challenging, I would have liked to have more completed tasks in my git repository.
+
+- first_name: Gustaf
+  last_name: Rudholm
+  image: Gustaf-400.png
+  summary: From online sales to full-time coder
+  testimonial: I can't think of a better way to secure your future
+  cohort_month: November
+  cohort_year: 2015
+  categories:
+    - career changer
+  case_study:
+    - question: Can you talk a little bit about who you are and what your work has been until now?
+      answer: My name is Gustaf Rudholm. I’m 34 years old and I have worked with e-companies since before the last IT crash. I started my journey with the electronics company NetOnNet in 1999 and I was there for seven years. I gained a great deal of experience there with digital commerce and developed as a businessman.
+    - question: In the Fall of 2015, you participated in the Craft Academy bootcamp. What made you decide to learn to code?
+      answer: I have always been fascinated by how digital products are built with just a bunch of numbers, letters and creativity. Even though I hadn’t written any code before, I had used tons of digital products and services and understood the benefits of learning more about programming.
+    - question: What would you say was the most important result of your time with Craft Academy?
+      answer: That I now code more or less full-time and make things that I only could have dreamed about doing before I participated in the bootcamp. I was very close to deciding not to enroll but now I can barely understand how I could have hesitated. Those twelve weeks have proved to be one of the best investments I have made in myself!
+    - question: What advice would you give someone who is thinking about enrolling in the bootcamp?
+      answer: Just do it! I have a hard time thinking of better ways to ensure one’s future. Whether you work as a developer or not, you’ll gain a huge benefit from your experiences with Craft Academy. Code is a global language, as important to understand as English. Without that understanding, it will be very difficult to keep up with the future job market.

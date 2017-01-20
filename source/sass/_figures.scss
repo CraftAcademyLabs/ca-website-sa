@@ -1,0 +1,28 @@
+figure.with-caption {
+  position: relative;
+  figcaption {
+    display: none;
+    @include media($desktop) {
+      @include clearfix;
+      display: block;
+      position: absolute;
+      bottom: ma-spacing(1);
+      width: 100%;
+      font-size: $base-font-size;
+      font-style: italic;
+      text-align: right;
+      color: $white;
+      text-shadow: 1px 1px 1px $dark-gray;
+      p {
+        display: inline-block;
+        float: right;
+        clear: right;
+        background-color: $red;
+        text-shadow: none;
+        padding: 0 modular-scale(-1);
+        margin-right: modular-scale(2);
+        margin-left: modular-scale(2);
+      }
+    }
+  }
+}

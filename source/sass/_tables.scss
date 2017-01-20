@@ -1,0 +1,118 @@
+table {
+  @include font-feature-settings("kern", "liga", "tnum");
+  border-collapse: collapse;
+  margin: 0;
+  width: 100%;
+}
+
+th {
+  border-bottom: 1px solid darken($base-border-color, 15%);
+  font-weight: 600;
+  padding: $base-spacing 0;
+  text-align: left;
+}
+
+thead {
+  th {
+    text-align: center;
+  }
+}
+
+td {
+  border-bottom: $base-border;
+  padding: ma-spacing(1) 0;
+}
+
+tr {
+  vertical-align: top;
+  &:last-of-type td {
+    border-bottom: none;
+  }
+
+  @include media($desktop) {
+    border-bottom: $base-border;
+  }
+
+  td,th {
+    font-size: 0.95em;
+    padding-right: 0.5em;
+    border-left: $base-border;
+    padding-left: 0.5em;
+
+    &:first-of-type {
+      border-left: none;
+      padding-left: none;
+    }
+
+    @include media($desktop) {
+      font-size: modular-scale(0);
+      vertical-align: middle;
+      padding-right: none;
+      border-left:none;
+      padding-left: none;
+    }
+  }
+}
+
+
+table.responsive-table {
+  @include media($mobile) {
+    thead {
+      display: none;
+    }
+    tbody {
+      tr {
+        position: relative;
+        &:last-of-type {
+          td:last-of-type {
+            border: none;
+          }
+        }
+      }
+      th {
+        display: block;
+      }
+      td {
+        &:last-of-type {
+          border-bottom: $base-border;
+          border-width: 1px;
+          margin-bottom: modular-scale(1);
+          padding-bottom: modular-scale(1);
+        }
+        width: 100%;
+        float: right;
+        border: none;
+        line-height: modular-scale(2);
+        text-align: right;
+        &:before {
+          font-weight: 500;
+          content: attr(data-header) ":";
+          display: block;
+          float: left;
+          text-align: left;
+          padding-right: modular-scale(1);
+          left: 0;
+          line-height: modular-scale(2);
+        }
+      }
+    }
+    tr.no-respond {
+      td {
+        text-align: center;
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.radio-table {
+  tbody tr {
+    &:hover {
+      background-color: lighten($light-gray, 8%);
+      cursor: pointer;
+    }
+  }
+}
+

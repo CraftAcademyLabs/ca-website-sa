@@ -1,0 +1,29 @@
+p.deprecated-browser-warning {
+  background-color: #f28e24;
+  z-index: 1000;
+  position: fixed;
+  color: white;
+  height: 160px;
+  width: 100%;
+  margin-top: -10px;
+  padding: 120px 0 0 10px;
+  font-size: 24px; }
+
+p.deprecated-browser-warning a {
+  color: #003340; }
+
+.vertical-top {
+  vertical-align: top;
+}
+
+.no-min-height {
+  min-height: 0px !important;
+}
+
+.graduate {
+  max-width: 90% !important;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=compatibility.css.map */

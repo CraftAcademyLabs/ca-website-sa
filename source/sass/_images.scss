@@ -1,0 +1,36 @@
+.image {
+  
+}
+
+.image--centered {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  img {
+    margin: 0 auto;
+  }
+}
+
+.image--small {
+  max-height: modular-scale(4);
+  max-width: modular-scale(4);
+}
+
+.image--medium {
+  max-height: modular-scale(8);
+  max-width: modular-scale(8);
+}
+
+.image--brand {
+  float: left;
+  opacity: 0.9;
+  height: 58px;
+  padding: 8px modular-scale(1);
+  img {
+    height: 35px;
+  }
+  transition: opacity 0.2s ease-in-out;
+  &:hover {
+    opacity: 1;
+  }
+}

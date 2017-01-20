@@ -1,0 +1,67 @@
+.hero {
+  @extend .backgrounded;
+  display: table;
+  text-align: center;
+  width: 100%;
+  @include media($desktop) {
+    p {
+      font-size: modular-scale(1);
+      line-height: 1.25 * $base-line-height;
+    }
+  }
+}
+
+.hero-white {
+  @extend .backgrounded-white;
+  display: table;
+  text-align: center;
+  width: 100%;
+  @include media($desktop) {
+    p {
+      font-size: modular-scale(1);
+      line-height: 1.25 * $base-line-height;
+    }
+  }
+}
+
+.hero-splash {
+  @extend .hero;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: ma-spacing(3);
+  @include media($desktop) {
+    padding: ma-spacing(5) 0;
+  }
+}
+
+.hero-small {
+  @extend .hero;
+  @include media($desktop) {
+    padding: ma-spacing(5) ma-spacing(1);
+  }
+}
+
+.hero--apply {
+  @extend .hero;
+  padding: 0;
+  .container {
+    min-height: 61.8vh;
+    display: table-cell;
+    vertical-align: middle;
+    padding: $section-spacing modular-scale(1);
+  }
+  @include media($desktop) {
+    padding: $section-spacing $base-spacing;
+    min-height: 61.8vh;
+  }
+}
+
+.hero-splash-white {
+  @extend .hero-white;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: ma-spacing(3);
+  @include media($desktop) {
+    padding: ma-spacing(5) 0;
+  }
+}

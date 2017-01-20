@@ -1,0 +1,16 @@
+%li{ class: current_if_current_page(current_page, '/english/za/about_us/') }
+  = link_to 'About Us'.mb_chars.upcase, '/english/za/about_us.html'
+%li{ class: current_if_current_page(current_page, '/english/employers/') }
+  = link_to 'Employers'.mb_chars.upcase, '/english/employers.html'
+%li{ class: current_if_current_page(current_page, '/english/curriculum/') }
+  = link_to 'Curriculum'.mb_chars.upcase, '/english/curriculum.html'
+%li{ class: current_if_current_page(current_page, '/english/za/payment/') }
+  = link_to 'Prices'.mb_chars.upcase, '/english/za/payment.html'
+%li
+  = link_to flag_image(:swedish), '/'
+- if current_page.url == '/english/employers/'
+  %li{ class: current_if_current_page(current_page, '/english/apply/') }
+    = link_to 'Hire'.mb_chars.upcase, config.hire_form_url, class: 'button button--vertical', target: '_blank'
+- else
+  %li{ class: current_if_current_page(current_page, '/english/apply/') }
+    = link_to 'Apply'.mb_chars.upcase, config.apply_sa_form_url, class: 'button button--vertical'

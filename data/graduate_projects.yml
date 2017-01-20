@@ -1,0 +1,183 @@
+- name: Makers Visitors App
+  team: Sarah, Richard, James, Milena
+  cohort: March 2015
+  blurb: An iPhone app that helps visitors coming to Makers Academy, telling them where to go for their meeting, and notifying the relevant Makers staff member of their arrival.
+  code_link: https://github.com/MakersApp/makers-app
+  live_link: https://www.youtube.com/watch?v=v1GVvMg1-Js
+  image: appp.jpg
+
+- name: Selecta
+  team: Alex, Salman, Faisal and Michael
+  cohort: June 2015
+  blurb: A music discovery application.
+  code_link: https://github.com/arnottmj/selecta-official
+  live_link: http://selecta-app.herokuapp.com
+  image: selecta.jpg
+
+- name: Stitch
+  team: Daniel, Alex, Chidu, Charlie and Chris
+  cohort: April 2015
+  blurb: Location-based movie scene mapper.
+  code_link: https://github.com/snapchidu/stitchvid
+  live_link: https://stitchvid.herokuapp.com/
+  image: stitch.jpg
+
+- name: Movie Snaps
+  team: Andy, Jennifer, Ashleigh, Stefan, Tim and Daryl
+  cohort: April 2015
+  blurb: Movie Snaps is a website you can use to record visits you make to movie locations across the world. You can create new visits, adding a photo (with a caption) of yourself re-enacting your chosen scene, which can then be liked and commented upon by other users.
+  code_link: https://github.com/andygout/Movie-Snaps
+  live_link: https://movie-snaps.herokuapp.com/
+  image: movie.jpg
+
+- name: Treemo
+  team: Dan, Fiona, Rodney and Tim
+  cohort: April 2015
+  blurb: Contribute to global reforestation, one check-in at a time.
+  code_link: https://github.com/treemoapp
+  live_link: http://treemo-dev.herokuapp.com/
+  image: treemo.jpg
+
+- name: Ignite
+  team: Andrea, George, Paul, Kanishk
+  cohort: March 2015
+  blurb: A crowdfunding platform for local community projects.
+  code_link: https://github.com/IgniteIt/ignite_it
+  live_link: https://igniteit.herokuapp.com/
+  image: ignite.jpg
+
+- name: Lend and Tend
+  team: Dan, Joe, Gus, Jade
+  cohort: Ronin March 2015
+  blurb: Fewer people can afford their own gardens these days, and people with gardens often have to work such long hours that they don't have time to do any gardening. Enter Lend and Tend. We match people with unused gardens they could lend, to people wanting to borrow a garden so they can tend.
+  code_link: https://github.com/joejknowles/lend_and_tend
+  live_link: http://pacific-tundra-1942.herokuapp.com/
+  image: lendandtend.jpg
+
+- name: Street Pacman
+  team: Vanessa, Tommaso, Diego, Guido
+  cohort: February 2015
+  blurb: Street Pacman is inspired by the '80s game Pacman but with a twist - it's now a real-life tag game. 5 players connect to the app and choose to be either Pacman or one of the 4 Ghosts. Pacman's goal is to eliminate every Ghost (with the help of 4 super pellets located on the map), and the Ghosts' aim is to tag Pacman.
+  code_link: https://github.com/vvirgitti/Street_Pacman
+  live_link: https://www.youtube.com/watch?v=LkLc1CcXZ6Y&feature=em-upload_owner
+  image: pacman.jpeg
+
+- name: Dinnr
+  team: Andy, Hannah, Jack, Matteo
+  cohort: Febuary 2015
+  blurb: Dinnr is a social app for organizing dinner parties, similar to Airbnb.
+  code_link: https://github.com/Dinnr-Makers/Dinnr
+  live_link: https://dinnr.herokuapp.com/
+  image: dinnr.jpg
+
+- name: Turn up Tune In
+  team: Andy, Hannah, Jack, Matteo
+  cohort: December 2014
+  blurb: A way to collaborate on creating a playlist, with the unique feature that the songs move with the person who chose them. You 'turn up' and your tunes go in. You leave and your tunes leave with you.
+  code_link: https://github.com/andygnewman/playlister
+  live_link: https://turnuptunein.herokuapp.com
+  image: turnuptunein2.jpg
+
+- name: One Day
+  team: Emily, Sanda, Luke, Johnathan, Huy
+  cohort: December 2014
+  blurb: A project for One Day from openIDEO. Connects young people searching for a job inspiration with professionals that are ready to share their passion for a one-day in-work experience.
+  code_link: https://github.com/emilysas/One_Day_Experience_Prototype
+  live_link: https://one-day-xp.herokuapp.com/
+  image: oneday2.jpeg
+
+- name: I Am Me
+  team: Charlie, Danielle, Ptolemy, India, Gus
+  cohort: December 2014
+  blurb: A visual calender app for a real life client.
+  code_link: https://github.com/ciawalsh/iamME
+  live_link: https://i-am-me.herokuapp.com
+  image: iamme.jpeg
+
+- name: Oodles
+  team: Claudia, Alan, Izzy, Ben H
+  cohort: October 2014
+  blurb: Connecting those with surplus food with charities that can use that food.
+  live_link: http://www.oodls.io/
+  code_link: https://github.com/Callisto13/Oodls
+  image: oodles.jpeg
+
+- name: Hipspot
+  team: Mishal, Ed, Ming, Nick
+  cohort: October 2014
+  blurb: Providing local hipster spots of interest on mobile.
+  live_link: http://hipspot.uk/
+  code_link: https://github.com/ejbyne/hipspot
+  image: hipspot.jpeg
+
+- name: Charity Stop Aids
+  team: John, Chris H, Giorgia, Clare, Dale
+  cohort: October 2014
+  blurb: Would you rather? A project for the charity StopAids to increse student political engagment thorough Twitter with a 'Would you rather?' game allowing MPs to easily answer.
+  live_link: https://students-stop-aids.herokuapp.com
+  code_link: https://github.com/chandley/stop-aids
+  image: studentstop.jpeg
+
+- name: Trackathon
+  team: Yvette, Camilla, Alex, Ella, Victoria
+  cohort: September 2014
+  blurb: A simply dashing way to track hackathons
+  live_link: http://dashing-trackathon.herokuapp.com/dashing/dashboards/hackathon?id=1
+  code_link: https://github.com/yvettecook/Trackathon
+  image: track.jpeg
+
+- name: FlickyNotes
+  team: Bernard, Karin, Rachel, Ana, Elena, Dan
+  cohort: September 2014
+  blurb: Flicky Notes is a meeting app which allows you to write your own notes on a mobile device and then, with a simple swipe movement, send it to the board on your desktop.
+  live_link: https://www.youtube.com/watch?v=qpGh8sWWuV0
+  code_link: https://github.com/karinnielsen/Final-Project-POSTit
+  image: flickynotes2.jpeg
+
+- name: NodeRover
+  team: Andrew, Colin, Hadi, Andrew, Zeeshan
+  cohort: September 2015
+  blurb: Node Rover is a group final project from Makers Academy. The original task was to build some form of robot that could be controlled wirelessely. The team decided to make a robot based on the Mars rover (4 engines with continuous tracks). It was built from scratch, and you can control it via a Node.js server. The goal was to have a mobile first web app which could control several aspects of the rover (motor movement, claw, camera pan tilt bracket) over wifi.
+  live_link: https://prezi.com/lt3irqzqae9f/node-rover/?utm_campaign=share&utm_medium=copy
+  code_link: https://github.com/Schlap/project-noderover
+  image: noderover2.jpeg
+
+- name: tweetMap
+  team: Elliot, Javier, Spike, Ethel
+  cohort: August 2015
+  blurb: Around the world, around 8000 tweets are sent per second. But what do people tweet about? The project visualises the moods of world regions based on tweets. Each word is analysed for emotional content using the AFINN database and given a score, e.g. +3 for 'happy' and -2 for 'sad'. The average score of a tweet determines its colour. Finally, the tweet is plotted on a HTML Canvas using the coordinates it was sent from.
+  live_link: http://tweetmapp.herokuapp.com/
+  code_link: https://github.com/spike01/mapp
+  image: tweetmapp.jpeg
+
+- name: Fhellow
+  team: Maya, Ruth, Michelle, Jerome
+  cohort: August 2015
+  blurb: Fhellow is a community of Freelancers, Entrepreneurs, Digital Nomads and others who spend a lot of time working independently. Our mission is to connect us all so we too can enjoy the benefits of having a work commmunity.
+  live_link: http://fhellow.herokuapp.com/
+  code_link: https://github.com/michballard/fhellow
+  image: fhellow.jpeg
+
+- name: Bunch
+  team: Charlotte, David, Jenny, Jeremy, Peter
+  cohort: June 2014
+  blurb: Bunch takes the arguments out of organising a meetup with friends. Just tell it where you're coming from and Bunch will find the best bars, cafes and restaurants in a central location that suits the whole group.
+  live_link: http://bunch-ldn.herokuapp.com/
+  code_link: https://github.com/thejennywang/bunch
+  image: bunch.jpeg
+
+- name: Challenge Me
+  team: Nicola, Toan, Jamie, Chloe, Nikesh, Joe
+  cohort: June 2014
+  blurb: An app to make raising money for charity through physical challenges easy.
+  live_link: http://challenge--me.herokuapp.com/
+  code_link: https://github.com/yoshdog/challenge-me
+  image: cm.jpeg
+
+- name: Strides
+  team: Julia, Nic, Margherita
+  cohort: May 2014
+  blurb: Strides is a web app that helps marathon runners find suitable accommodation for their upcomming race.
+  live_link: http://strides.herokuapp.com/
+  code_link: https://github.com/juliatan/racefinder
+  image: strides.jpeg

@@ -1,0 +1,10 @@
+offline:
+  cost: 8000
+  gender_discount: 500
+  deposit_percentage: 0.1
+  early_payment_discount_percentage: 0.1
+online:
+  cost: 2499
+  gender_discount: 0
+  deposit_percentage: 0.2
+  early_payment_discount_percentage: 0

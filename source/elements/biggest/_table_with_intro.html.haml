@@ -1,0 +1,31 @@
+
+%section
+  .container
+    .centered-row
+      %h4.leader Optional Leader
+      %h2 Required Header
+      %h4.subheader Optional Subheader
+      %p
+        Optional Text.
+        = "#{lorem.sentences(3)}"
+    .centered-row
+      %table.responsive-table
+        %thead
+          %tr
+            %th Pre-course Start
+            %th Course Start
+            %th Hiring Begins
+        %tbody
+          %tr
+            %td{data:{header: "Start Date"}} 4 August 2015
+            %td{data:{header: "Another Date"}} 1 September 2015
+            %td{data:{header: "More Date"}} 20 November 2015
+          %tr
+            %td{data:{header: "Start Date"}} £15.00
+            %td{data:{header: "Another Date"}} $161,000
+            %td{data:{header: "More Date"}} €400
+          %tr
+            %td{data:{header: "Start Date"}} Another kind of data
+            %td{data:{header: "Another Date"}} More sentences
+            %td{data:{header: "More Date"}}
+              = link_to "How about a link?", "#", class: "button button--horizontal"

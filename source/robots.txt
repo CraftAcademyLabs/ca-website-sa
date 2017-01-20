@@ -1,0 +1,4 @@
+Sitemap: https://craftacademy.se/sitemap.xml
+
+
+User-agent: *

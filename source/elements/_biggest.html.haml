@@ -1,0 +1,76 @@
+%section.no-padding-bottom
+  .centered-row
+    %h2 Biggest
+    %h4.subheader Whole sections
+  .definition-row
+    %aside#definition-top
+      %nav.definition-links
+        %a.definition-link{href: "#definition-hero-splash"} Hero Splash
+        %a.definition-link{href: "#definition-hero"} Hero
+        %a.definition-link{href: "#definition-hero-with-options"} Hero with Options
+        %a.definition-link{href: "#definition-image-grid"} Image Grid
+        %a.definition-link{href: "#definition-slider"} Slider
+        %a.definition-link{href: "#definition-half-slider"} Half Slider
+        %a.definition-link{href: "#definition-three-width-copy"} Three-width Copy
+        %a.definition-link{href: "#definition-three-width-fixtures"} Three-width Fixtures
+        %a.definition-link{href: "#definition-five-width-fixtures"} Five-width Fixtures
+        %a.definition-link{href: "#definition-table-with-intro"} Table with Intro
+        %a.definition-link{href: "#definition-two-up-video"} Two-up Video
+    %article
+      .category
+        %h4 Hero Splash
+        %dl.definition{id: "definition-hero-splash"}
+          %dt Large, backgrounded content for page headers
+          %dd= partial :"elements/element", locals: { partial_name: "elements/biggest/_hero_splash" }
+      .category
+        %h4 Hero
+        %dl.definition{id: "definition-hero"}
+          %dt Large, backgrounded content. Can be anywhere
+          %dd= partial :"elements/element", locals: { partial_name: "elements/biggest/_hero" }
+      .category
+        %h4 Hero with Options
+        %dl.definition{id: "definition-hero-with-options"}
+          %dt 
+            Large, backgrounded content. Prioritise one route above others. 
+            %strong Obey the outside-in UX rules: all roads lead to the main site.
+          %dd= partial :"elements/element", locals: { partial_name: "elements/biggest/_hero_with_options" }
+      .category
+        %h4 Image Grid
+        %dl.definition{id: "definition-image-grid"}
+          %dt Images arranged in a grid. Images must be 600x180px, transparent PNGs.
+          %dd= partial :"elements/element", locals: { partial_name: "elements/biggest/_image_grid" }
+      .category
+        %h4 Slider
+        %dl.definition{id: "definition-slider"}
+          %dt Repeated similar content
+          %dd= partial :"elements/element", locals: { partial_name: "elements/biggest/_slider" }
+      .category
+        %h4 Half Slider
+        %dl.definition{id: "definition-half-slider"}
+          %dt Repeated similar content, with context
+          %dd= partial :"elements/element", locals: { partial_name: "elements/biggest/_half_slider" }
+      .category
+        %h4 Three-width Copy
+        %dl.definition{id: "definition-three-width-copy"}
+          %dt Three-wide header & text
+          %dd= partial :"elements/element", locals: { partial_name: "elements/biggest/_three_width_copy" }
+      .category
+        %h4 Three-width Fixtures
+        %dl.definition{id: "definition-three-width-fixtures"}
+          %dt Three-wide image-and-text, with optional CTA
+          %dd= partial :"elements/element", locals: { partial_name: "elements/biggest/_three_width_fixtures" }
+      .category
+        %h4 Five-width Fixtures
+        %dl.definition{id: "definition-five-width-fixtures"}
+          %dt Five-wide images, with optional CTA (no text)
+          %dd= partial :"elements/element", locals: { partial_name: "elements/biggest/_five_width_fixtures" }
+      .category
+        %h4 Table with Intro
+        %dl.definition{id: "definition-table-with-intro"}
+          %dt 2-dimensional data, with an introduction explaining what it is.
+          %dd= partial :"elements/element", locals: { partial_name: "elements/biggest/_table_with_intro" }
+      .category
+        %h4 Two-up Video
+        %dl.definition{id: "definition-article"}
+          %dt Responsive Videos. Note the wrapper.
+          %dd= partial :"elements/element", locals: { partial_name: "elements/biggest/_two_up_video" }

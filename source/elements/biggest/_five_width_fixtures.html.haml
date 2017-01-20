@@ -1,0 +1,36 @@
+
+%section
+  .container
+    .centered-row
+      %h4.leader Optional Leader
+      %h2 Required Header
+      %h4.subheader Optional Subheader
+      %p 
+        Optional Text. Images are also optional, and must be sized 600x600 pixels (@2x), and 300x300 pixels (regular).
+        = lorem.sentences(2)
+    .five-width-row
+      .column
+        = image_tag "icons/icon-cash.jpg", class: "image--medium"
+        %h4 Optional Title
+        .button-row
+          %p= link_to "Optional CTA", "#", target: "_blank", class: "button button--horizontal"
+      .column
+        = image_tag "icons/icon-credit-card.jpg", class: "image--medium"
+        %h4 Optional Title
+        .button-row
+          %p= link_to "Optional CTA", "#", target: "_blank", class: "button button--horizontal"
+      .column
+        = image_tag "payment-options/transferwise.jpg", class: "image--medium"
+        %h4 Optional Title
+        .button-row
+          %p= link_to "Optional CTA", "#", target: "_blank", class: "button button--horizontal"
+      .column
+        = image_tag "payment-options/gocardless.jpg", class: "image--medium"
+        %h4 Optional Title
+        .button-row
+          %p= link_to "Optional CTA", "#", target: "_blank", class: "button button--horizontal"
+      .column
+        = image_tag "payment-options/paypal.jpg", class: "image--medium"
+        %h4 Optional Title
+        .button-row
+          %p= link_to "Optional CTA", "#", target: "_blank", class: "button button--horizontal"

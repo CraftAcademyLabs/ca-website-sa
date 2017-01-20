@@ -1,0 +1,23 @@
+%section
+  .container
+    .centred-row
+      %h2 Steg för steg
+      %p.copy--left
+        Applikationsutveckling är komplext. En av de största utmaningar som du kan komma att tampas med när du lär dig att koda, är att veta i vilken ordning du ska lära dig saker och ting i. Ska du lära dig HTML först och sedan Ruby? Eller kanske börja med Javascript och sedan ge dig på Rails?
+        Vår läroplan är utvecklad av yrkesverksamma mjukvaruingenjörer och baserad på verkliga cases och senaste praxis. Sättet vi har byggt det på garanterar dig att du,
+        vid varje tillfälle, lär dig och jobbar med relevanta ämnen.
+      %hr
+    .definition-row
+      %aside#definition-top
+        %nav.definition-links
+          - data.curriculum_weeks.each_with_index do |week, index|
+            %a.definition-link{href: "#definition-#{index}"}= week[:title]
+      %article
+        - data.curriculum_weeks.each_with_index do |week, index|
+          .category
+            %h4{id: "definition-#{index}"}= week[:title]
+            %dl.definition{id: slug(week[:title])}
+              %dt= week[:summary]
+              %dd
+                %p= week[:blurb]
+

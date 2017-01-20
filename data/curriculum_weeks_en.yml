@@ -1,0 +1,39 @@
+- title: Part-time Preparatory Course
+  summary: Everything you need before bootcamp begins
+  blurb: You must develop a solid grasp of programming fundamentals before the course begins to reap the greatest benefit from the intense, thorough course plan. During the prep course, you'll work from home with our materials. With the help of our coaches and your fellow cohort members, you'll cover the most important background skills to hit the ground running from Day One. Expect to spend about 15 to 20 hours each week in the month before bootcamp begins.
+
+- title: Week 1
+  summary: Test driven development and introduction to Ruby
+  blurb: The first week's challenge is to build a simple ATM Simulator. The challenge is about understanding how an everyday situation might look like when you think about it in terms of code and how different objects interact with each other. During the week, we introduce a number of new terms and concepts that lay the foundation for your future development. We practice pair programming and test driven development and we also struggle with version control and more advanced Ruby syntax. During this week we also introduce a user-focused approach to program development. The week ends with your first individual Weekend Challenge.
+
+- title: Week 2
+  summary: Introduction to JavaScript
+  blurb: We introduce another programming language and associated testing framework - JavaScript and Jasmine. We also go through the basics of HTML and CSS and build an application that calculates your Body Mass Index (BMI Challenge) and deploy our first app on the Internet. Once again, you will have a Weekend Challenge to complete.
+
+- title: Week 3
+  summary: Pair Programming and User-Driven Development
+  blurb: This week we begin to lay the foundation for an online system that allows users to order food online. We introduce Sinatra, a framework for web based applications, and give you your first insight into Agile practices, focusing on Behavior Driven Development. The Slow Food Challenge is also about thinking more deeply about how the pieces of an application fit together, using advanced techniques such as user registration, authentication and authorization. At the end of the week, we are ready to go live with the Slow Food Online application and we deploy our system using Heroku. To facilitate and automate our deploy process we use techniques such as Continuous Integration and Continuous Deployment.
+
+- title: Week 4
+  summary: Static sites and more in-depth HTML and CSS
+  blurb: During Week Four, you'll build your own portfolio site using a static website framework called Middleman. We go in-depth with HTML, learn a markup language called HAML, introduce the Javascript framework JQuery and style portfolios with a CSS framework. At the end of the week, you'll have a professional portfolio site, which you will fill with the projects you complete over the rest of the course.
+
+- title: Week 5
+  summary: Software as a Service with Ruby on Rails
+  blurb: This week we introduce Ruby on Rails, a popular and in-demand framework that allows programmers to build complex, exciting web applications. We present more complex testing strategies and help you understand how testing can greatly improve your workflow. This week we deepen our knowledge of external libraries (gems), APIs, websockets, etc.
+
+- title: Week 6
+  summary: Mid Course Project
+  blurb: Halfway through the course, it is time for you to test your knowledge and take a step away from coach-led exercises. It is time for you to dream up, plan for, and build your own project. Working in teams or groups, you will not only decide what code to write and which features to implement, but also which planning tools to utilize and when and how to delegate assignments, while we keep a watchful eye to make sure everyone is making progress. It's a big week here at Craft Academy.
+
+- title: Week 7
+  summary: Mobile applications
+  blurb: In Week 7 we deepen your knowledge of Javascript by introducing AngularJS, a web framework for front-end development, and Ionic, a framework that enables programmers to write for mobile devices, without having to work with native iOS or Android languages. At the end of the week, you will have deployed two applications to online servers that can be viewed on your mobile device.
+
+- title: Weeks 8, 9 and 10
+  summary: Advanced Rails, APIs and Agile development methods
+  blurb: These weeks strengthen and deepen your competence and experience with a large project that tests the knowledge you have gained thus far. During these three weeks, you'll build a complex and detailed application, based on the prototype you develop in Week Three. This time, you will add multiple layers of complexity, and work in Rails as Slow Food Online becomes a marketplace with several user types. We will practice Agile workflow, pushing you to work efficiently. At the end of these weeks, you will have a large, complicated, and impressive project to add to your portfolio.
+
+- title: Weeks 11 & 12
+  summary: Final Project and Career Coaching
+  blurb: At this point, you will have the skills to work independently, able to plan and execute large web applications. We continue to push you out of your comfort zone and work with more complicated tools. In the final weeks of the bootcamp, you'll once again program a complex project, building on the many and varied skills you have developed over the previous weeks. You will work in a team to create a Minimum Viable Product (MVP) that would be ready to ship to a real customer. During the last week of the course, we shift focus a bit to talk about careers. You'll receive a portfolio and CV review, job interview coaching, and several lectures about technical work and the marketplace. We prepare our students to start their careers in software development this week. On graduation day, of course, we break out the champagne and celebrate our brand new junior developers.

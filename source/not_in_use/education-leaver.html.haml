@@ -1,0 +1,92 @@
+- description "Craft Academy is London's leading Web Developer Bootcamp. Learn to code in 12 Weeks by enrolling on one of our programming / web development courses! Learn Ruby, JavaScript and the best software practices."
+%section.hero-splash{style: "background-image: url(#{image_path("backgrounds/dan-and-students-overhead-70.jpg")});"}
+  .container
+    .centered-row
+      %h4.leader Start your career
+      %h1 Learn to code in 12 weeks
+      %h4.subheader
+
+      %p Have you just finished university and not sure what to do or where to go with life? Or maybe you're thinking of skipping university altogether? Get ahead of the game and learn the most essential skill of the modern age: Coding! As Europe's leading web developer bootcamp, Craft Academy has graduated over #{stats.number_of_graduates} students into their dream jobs as junior developers. Apply now to learn the principles of software craftsmanship and start your career as a web developer.
+    = partial :"email-capture"
+
+%section
+  .article--centered
+    %article
+      %h3 Why should you consider a career in web development?
+      %p The technology sector has been growing rapidly for years, and has been totally unaffected by the recession. With demand for developers growing 20% year-on-year, and supply of developers (mainly graduates of computer science degrees) flatlining at 1%, the demand for developers is growing rapidly. In short - the tech industry needs you!
+      %p In today's world, sometimes having a uni degree just isn't enough. Employers value practical skills and digital literacy over fancy pieces of paper and abstract knowledge. You can show them that your knowledge goes further than just the textbooks by learning to code.
+      %p Don't want to end up on a bog standard graduate programme? Want to be in full control of your career and have creative freedom? Technology companies are notoriously known to have fun, playful offices and a relaxed, egalitarian working culture. Our office at Craft Academy has everything from beanbags & table tennis to a hammock & board games! The culture tends to be flat, friendly and autonomous in the tech industry.
+%hr
+
+%section.no-padding-bottom
+  .article--centered
+    %article
+      %h3 This could be you
+      %p Before coming to Craft Academy, our graduates have done degrees in various subjects. Everything from from politics to philosophy, history and even art. No matter what your background it is possible to learn to code and get a job as a junior developer!
+= partial :"full_graduates", locals: { category: "education leaver" }
+
+%section.hero{style: "background-image: url(#{image_path("backgrounds/students-in-lecture.jpg")});"}
+  .container
+    .centered-row
+      %h4.leader Meet
+      %h2 Our hiring partners
+      %p An average salary for a Craft Academy graduate in a junior developer role is £32k. Now compare that to the starting salary for a UK University graduate which ranges between £18,000-£24,000! While you're mates will be starting on much lower salaries, you can get ahead and earn more!
+    .three-width-row
+      .column
+        .image--centered
+          = image_tag "hiring-partners/Atos.png"
+        .image--centered
+          = image_tag "hiring-partners/compare-the-market.png"
+      .column
+        = link_to "Learn about Partners", "/employers.html", class: "button button--horizontal"
+      .column
+        = image_tag "hiring-partners/Deloitte-Digital.png"
+        = image_tag "hiring-partners/just-giving.png"
+
+%section.half-slider.half-slider--reverse.with-padding
+  .container
+    .half-slider-row
+      .hide-desktop
+        .copy.copy--right
+          %h4.leader A World-Leading
+          %h2 Curriculum
+          %p We're passionate about education and software development. Our course has been designed by industry experts to introduce you to the most-used technologies in today's marketplace, and to equip you with the skills you need to quickly find a job as a junior developer.
+          .button-row.shift-to-bottom
+            %p
+              = link_to "Our Education Philosophy", "/curriculum.html", class: "button button--horizontal"
+      .column
+        .slider
+          .slide
+            .image--centered
+              = image_tag "technologies/ruby-logo.png", height: 150
+            %h3 Ruby
+            %p Ruby is a general-purpose programming language. The brainchild of many other brilliant languages, it's an intuitive route into programming. Ruby is used in web applications through frameworks like Rails and Sinatra.
+          .slide
+            .image--centered
+              = image_tag "technologies/html5-logo.png", height: 150
+            %h3 HTML
+            %p HTML is the building material of the web. We'll guide you towards building beautiful, structured webpages and altering content dynamically, both on the server and client-side.
+          .slide
+            .image--centered
+              = image_tag "technologies/javascript-logo.png", height: 150
+            %h3 JavaScript
+            %p JavaScript is rapidly becoming the biggest programming language in the world. You can use it anywhere: to animate text on a page, to run a high-throughput server, and to enable your coffee machine to work over WiFi.
+          .slide
+            .image--centered
+              = image_tag "technologies/git-logo.png", height: 150
+            %h3 git
+            %p git is the world's most popular way to manage, share, and distribute code. We embed best GitHub practices from the get-go, which perfectly suits out focus on Pair Programming - and our Hiring Partners.
+      .column.show-desktop
+        .copy.copy--right
+          %h4.leader A World-Leading
+          %h2 Curriculum
+          %p We're passionate about education and software development. Our course has been designed by industry experts to introduce you to the most used technologies in today's marketplace, and to equip you with the skills you need to quickly find a job as a Junior Developer.
+          .button-row
+            %p
+              = link_to "Our Education Philosophy", "/curriculum.html", class: "button button--horizontal"
+
+%hr
+
+= partial :"benefits_table"
+
+= partial :"apply"

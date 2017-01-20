@@ -1,0 +1,27 @@
+%section
+  .centered-row
+    %h2 Forms
+    %h4.subheader Send data from the Client to the Server via the Internet.
+  .definition-row
+    %aside#definition-top
+      %nav.definition-links
+        %a.definition-link{href: "#definition-inputs"} Inputs
+        %a.definition-link{href: "#definition-radio-table"} Radio Table
+        %a.definition-link{href: "#definition-example-form"} Example Form
+
+    %article
+      .category
+        %h4 Inputs
+        %dl.definition{id: "definition-inputs"}
+          %dt Available inputs, with example labels and hints, etc.
+          %dd= partial :"elements/element", locals: { partial_name: "elements/forms/_inputs" }
+      .category
+        %h4 Radio Table
+        %dl.definition{id: "definition-radio-table"}
+          %dt Interactive radio tables.
+          %dd= partial :"elements/element", locals: { partial_name: "elements/forms/_radio_table" }
+      .category
+        %h4 Example Form
+        %dl.definition{id: "definition-example-form"}
+          %dt An example of the form structure. Note the use of `fieldset` and `legend`.
+          %dd= partial :"elements/element", locals: { partial_name: "elements/forms/_example_form" }

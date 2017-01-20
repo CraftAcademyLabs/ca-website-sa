@@ -1,0 +1,12 @@
+%li{ class: current_if_current_page(current_page, '/') }
+  = link_to 'Home', '/english/za'
+%li{ class: current_if_current_page(current_page, '/english/za/about_us/') }
+  = link_to 'About Us', '/english/za/about_us.html'
+%li{ class: current_if_current_page(current_page, '/english/employers/') }
+  = link_to 'Employers', '/english/employers.html'
+%li{ class: current_if_current_page(current_page, '/english/curriculum/') }
+  = link_to 'Curriculum', '/english/curriculum.html'
+%li{ class: current_if_current_page(current_page, '/english/za/payment/') }
+  = link_to 'Prices'.mb_chars.upcase, '/english/za/payment.html'
+%li
+  = link_to flag_image(:swedish), '/'

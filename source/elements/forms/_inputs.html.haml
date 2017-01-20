@@ -1,0 +1,39 @@
+
+.input-row
+  %label (Hidden)
+  %input{type: "hidden"}
+
+.input-row
+  %label Text
+  %input{type: "text"}
+
+.input-row
+  %label Email
+  %input{type: "email"}
+
+.input-row
+  %label Telephone number
+  %input{type: "tel"}
+
+.input-row
+  %label Checkbox
+  %input{type: "checkbox"}
+
+.input-row
+  %label Textarea (with hint and wordcount)
+  %p.input-hint 
+    This is a hint about how to fill out the input.
+    %span.small You can use small text for extra hierarchy
+  %textarea
+  %p.input-feedback
+    %span This is an example. You're 450 words over the limit.
+
+.input-row
+  %label Select
+  %select
+    %option{value: "option_1"} Option 1
+    %option{value: "option_2"} Option 2
+
+.button-row
+  %p
+    %input{type: "submit", value: "Example Submit"}

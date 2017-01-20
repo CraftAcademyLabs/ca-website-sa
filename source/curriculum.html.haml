@@ -1,0 +1,15 @@
+- description 'Upptäck vår beprövade läroplan - utvecklad av yrkesverksamma programmerare och baserad på verkliga cases och senaste praxis.'
+- title 'Läroplan'
+
+= partial :'curriculum/splash'
+
+%section.hero-splash-white{style: "background-image: url(#{image_path('backgrounds/ipad-fade.jpg')});"}
+  .container
+    .centered-row
+      %h2 12 veckor
+      %p.copy Applikationsutveckling är komplext. En av de största utmaningar som du kan komma att tampas med när du lär dig att koda, är att veta i vilken ordning du ska lära dig saker och ting i. Vår läroplan är utvecklad av yrkesverksamma mjukvaruingenjörer och baserad på verkliga cases och senaste praxis. Sättet vi har byggt det på garanterar dig att du, vid varje tillfälle, lär dig och jobbar med relevanta ämnen.
+      = link_to 'Veckoplan', '/weekly_plan', class: 'button button--vertical'
+
+= partial :'course_dates'
+= partial :'what_you_get'
+= partial :'apply'

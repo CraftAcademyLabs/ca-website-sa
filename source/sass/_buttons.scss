@@ -1,0 +1,67 @@
+#{$all-button-inputs},
+.button, button {
+  @include appearance(none);
+  border: 2px solid $brand-secondary-color;
+  color: $button-color;
+  -webkit-font-smoothing: antialiased;
+  background-color: rgba($white, 0.4);
+  border-radius: $button-border-radius;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  font-weight: bold;
+  line-height: $base-line-height;
+  padding: ma-spacing(0.5) ;
+  min-width: $base-button-width / 2;
+  text-decoration: none;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-align: center;
+  @include transition(all 0.2s ease-in-out);
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+
+  &:hover,
+  &:focus {
+    background: rgba($white, 0.2);
+    outline: 0;
+  }
+
+  @include media($desktop) {
+    background-color: transparent;
+    min-width: $base-button-width;
+
+  }
+}
+
+.button--vertical {
+  color: $brand-primary-color;
+  border-color: $brand-primary-color;
+  &:hover {
+    color: darken($brand-primary-color, 10%);
+    border-color: darken($brand-primary-color, 10%);
+  }
+}
+
+.button--horizontal {
+  color: $brand-secondary-color;
+  border-color: $brand-secondary-color;
+  &:hover {
+    color: $brand-secondary-color;
+    border-color: $brand-secondary-color;
+  }
+}
+
+.button--large {
+  min-width: 11.1em / 2;
+  font-size: modular-scale(2);
+  line-height: $perfect-fourth * $golden;
+  @include media($desktop) {
+    min-width: 11.1em;
+  }
+}

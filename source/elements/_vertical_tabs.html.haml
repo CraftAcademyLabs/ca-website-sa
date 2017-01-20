@@ -1,0 +1,19 @@
+.vertical-tabs-container
+  .vertical-tabs
+    %a.js-vertical-tab.vertical-tab.is-active{:href => "javascript:void(0)", :rel => "tab1"} Item 1
+    %a.js-vertical-tab.vertical-tab{:href => "javascript:void(0)", :rel => "tab2"} Item 2
+    %a.js-vertical-tab.vertical-tab{:href => "javascript:void(0)", :rel => "tab3"} Item 3
+    %a.js-vertical-tab.vertical-tab{:href => "javascript:void(0)", :rel => "tab4"} Item 4
+  .vertical-tab-content-container
+    %a.js-vertical-tab-accordion-heading.vertical-tab-accordion-heading.is-active{:href => "", :rel => "tab1"} Item 1
+    #tab1.js-vertical-tab-content.vertical-tab-content
+      %p= lorem.sentences(5)
+    %a.js-vertical-tab-accordion-heading.vertical-tab-accordion-heading{:href => "", :rel => "tab2"} Item 2
+    #tab2.js-vertical-tab-content.vertical-tab-content
+      %p= lorem.sentences(5)
+    %a.js-vertical-tab-accordion-heading.vertical-tab-accordion-heading{:href => "", :rel => "tab3"} Item 3
+    #tab3.js-vertical-tab-content.vertical-tab-content
+      %p= lorem.sentences(5)
+    %a.js-vertical-tab-accordion-heading.vertical-tab-accordion-heading{:href => "", :rel => "tab4"} Item 4
+    #tab4.js-vertical-tab-content.vertical-tab-content
+      %p= lorem.sentences(5)

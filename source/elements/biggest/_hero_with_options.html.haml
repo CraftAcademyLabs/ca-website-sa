@@ -1,0 +1,14 @@
+
+%section.hero--apply{style: "background-image: url(#{image_path("backgrounds/postit-wall.jpg")});"}
+  .container
+    .centered-row
+      .column
+        %h4.leader Optional Leader
+        %h2 Required Header
+        %h4.subheader Optional Subheader
+        %p Need to offer three different options, but prioritise one? Look no further.
+    .button-row
+      %p
+        = link_to "Less important CTA", "#", class: "button button--horizontal"
+        = link_to "Most important", "#", class: "button button--vertical button--large", target: "_blank"
+        = link_to "Less important CTA", "#", class: "button button--horizontal"

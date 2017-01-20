@@ -1,0 +1,25 @@
+- description "Craft Academy graduates come from all sorts of backgrounds. The diversity of our students has proved one thing - no matter your background, you can learn to code in 12 weeks and make a career change if you really want it."
+- title "Graduates"
+
+%section.hero-splash{style: "background-image: url(#{image_path('backgrounds/splash_4.jpg')});"}
+  .container
+    .centered-row
+      %h1 Graduates
+      %p Our graduates come from all sorts of backgrounds: everything from academics and bankers to university leavers and stay at home parents. The diversity of our students has proved one thing: no matter your background, you can change career by learning to code in 12 weeks.
+    = partial :'email-capture'
+
+= partial :'full_graduates'
+
+%hr
+
+%section
+  .article--centered
+    %article
+      %h3 Final Projects
+      %p Graduates' final projects showcase what you can achieve in just 12 short weeks. Our students have built robots, Internet of Things devices, and real-life client work for charities. Check out the live versions, and discover the technologies they used by looking through their code.
+
+= partial :"graduate_projects"
+
+= partial :"benefits_table"
+
+= partial :"apply", locals: {backgrounded: false}

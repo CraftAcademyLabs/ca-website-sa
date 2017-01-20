@@ -1,0 +1,27 @@
+- data.htaccess.errors.each do |code, document|
+  ErrorDocument #{code} #{document}
+
+Options -Indexes
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^makersacademy.se
+RewriteRule (.*) https://craftacademy.se/$1 [R=301,L]
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^www.makersacademy.se
+RewriteRule (.*) https://craftacademy.se/$1 [R=301,L]
+
+RewriteEngine On
+RewriteCond %{ENV:MM_COUNTRY_CODE} ^ZA$
+RewriteCond %{REQUEST_URI} !^/(south-africa|pretoria|sass|terms|privacy|international|javascripts|stylesheets|english|za)
+RewriteRule (.*) https://craftacademy.se/english/za [L]
+
+RewriteEngine On
+RewriteCond %{ENV:MM_COUNTRY_CODE} ^ZA$
+RewriteCond %{REQUEST_URI} ^/english/about_us
+RewriteRule (.*) https://craftacademy.se/english/za/about_us [L]
+
+RewriteEngine On
+RewriteCond %{ENV:MM_COUNTRY_CODE} ^ZA$
+RewriteCond %{REQUEST_URI} ^/english/payment
+RewriteRule (.*) https://craftacademy.se/english/za/payment [L]

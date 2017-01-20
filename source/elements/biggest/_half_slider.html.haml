@@ -1,0 +1,30 @@
+
+%section.half-slider
+  .container
+    .half-slider-row
+      .column
+        .copy.copy--left
+          %h4.leader Leader
+          %h2 Header
+          %p= lorem.sentences(4)
+          .button-row.shift-to-bottom
+            %p
+              = link_to "Call to Action", "#", class: "button button--horizontal"
+      .column
+        .slider.lazy-slider
+          .slider-content
+            %figure.with-caption
+              .image--centered
+                %img{'data-lazy' => image_path("graduates/nicole.jpg")}
+              %figcaption
+                %p= "Nicole Pellicena"
+                %p Marketing Manager to Junior Developer at Deloitte Digital
+                %p= "Graduated December 2014"
+          .slider-content
+            %figure.with-caption
+              .image--centered
+                %img{'data-lazy' => image_path("graduates/ruth.jpg")}
+              %figcaption
+                %p= "Ruth Earle"
+                %p Full-time Mum to Junior Developer at Mergermarket
+                %p= "Graduated October 2014"

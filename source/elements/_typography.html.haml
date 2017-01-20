@@ -1,0 +1,41 @@
+%section
+  .container
+    %h2 Typography
+  .definition-row
+    %aside#definition-top
+      %nav.definition-links
+        %a.definition-link{href: "#definition-headings"} Headings
+        %a.definition-link{href: "#definition-paragraphs"} Paragraphs
+        %a.definition-link{href: "#definition-blockquotes"} Blockquotes
+        %a.definition-link{href: "#definition-lists"} Lists
+        %a.definition-link{href: "#definition-article"} Articles (extended text)
+    %article
+      .category
+        %h4 Headings
+        %dl.definition{id: "definition-headings"}
+          %dt Large, backgrounded content for page headers
+          %dd= partial :"elements/element", locals: { partial_name: "elements/typography/_headings" }
+      .category
+        %h4 Paragraphs
+        %dl.definition{id: "definition-paragraphs"}
+          %dt Extended blocks of written text
+          %dd= partial :"elements/element", locals: { partial_name: "elements/typography/_paragraphs" }
+      .category
+        %h4 Blockquotes
+        %dl.definition{id: "definition-blockquotes"}
+          %dt Quotes and testimonials
+          %dd= partial :"elements/element", locals: { partial_name: "elements/typography/_blockquotes" }
+      .category
+        %h4 Lists
+        %dl.definition{id: "definition-lists"}
+          %dt Repeated textual content of a similar type
+          %dd= partial :"elements/element", locals: { partial_name: "elements/typography/_lists" }
+      .category
+        %h4 Article
+        %dl.definition{id: "definition-article"}
+          %dt 
+            Extended text stuff. Overrides some styles specified in
+            %code _variables.scss
+            and
+            %code _typography.scss
+          %dd= partial :"elements/element", locals: { partial_name: "elements/typography/_article" }

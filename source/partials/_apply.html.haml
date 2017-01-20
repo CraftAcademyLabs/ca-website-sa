@@ -1,0 +1,23 @@
+- backgrounded ||= true
+- page ||= :default
+- language ||= :se
+- background_image ||= ''
+
+%section.hero--apply{style: backgrounded ? "background-image: url(#{image_path(current_page_is_campaign_page? ? "backgrounds/#{background_image}" : 'backgrounds/splash_2.jpg')});": ''}
+  .container
+    .centered-row
+      .column
+        - if language == :se
+          %h2 Ansök nu
+          %p
+            %strong Vi startar nya kurser var 12:e vecka och tar emot och utvärderar ansökningar löpande. Ansökningsprocessen kan ta upp till två veckor så tänk på att ansöka i god tid!
+        - else
+          %h2 Apply now
+          %p
+            %strong
+              We are starting a new course every 8 weeks and continuously review and accept applicants.
+    .centered-row
+      - if language == :se
+        = link_to 'Ansök nu', config.apply_form_url, class: 'button button--vertical button--large', target: '_blank'
+      - else
+        = link_to 'Apply', config.apply_sa_form_url, class: 'button button--vertical button--large', target: '_blank'

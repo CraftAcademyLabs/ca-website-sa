@@ -1,0 +1,99 @@
+// such as the lists used for FAQs
+
+.definition-row {
+  $definition-links-padding-top: modular-scale(4);
+
+  display: inline-block;
+  position: relative;
+
+  aside {
+    @include media($desktop) {
+      display: table-cell;
+      width:33.33333%;
+    }
+
+    .definition-links {
+      @include transition(padding 0.2s ease-in-out);
+      @include media($desktop) {
+        padding-top: 0;
+        width: em(300);
+      }
+      a {
+        text-decoration: none;
+      }
+    }
+
+    .definition-link {
+      display: block;
+      outline: none;
+      padding: modular-scale(-3) 0;
+      &:first-child {
+        padding-top: 0;
+      }
+
+      &:last-child {
+        margin-bottom: $base-spacing;
+      }
+
+      @include media($desktop) {
+        text-align: right;
+        margin-right: $base-spacing;
+      }
+    }
+  }
+
+  .definition {
+    text-align: left;
+
+    &:last-child {
+      margin-bottom: modular-scale(3);
+    }
+  }
+
+  @include media($desktop) {
+
+    .fixed-top {
+      position: fixed;
+      top: $definition-links-padding-top;
+      padding-top: $definition-links-padding-top !important;
+    }
+
+    .fixed-bottom {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  article {
+    & > .category > h4 {
+      margin: 0 0 0.5em 0;
+      text-align: left;
+    }
+
+    p {
+      color: $base-font-color;
+      line-height: $base-line-height;
+    }
+
+    .question {
+      p {
+        margin-bottom: 2em;
+        text-align: left;
+      }
+      ul {
+        @include ma-unordered-list;
+        margin-bottom: 2em;
+      }
+      &:last-of-type p {
+        margin-bottom: 0;
+      }
+    }
+
+    @include media($desktop) {
+      display: table-cell;
+      width: 66.66667%;
+      vertical-align: top;
+    }
+  }
+}
