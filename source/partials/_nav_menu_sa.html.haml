@@ -1,0 +1,14 @@
+%li{ class: current_if_current_page(current_page, '/about_us/') }
+  = link_to 'About Us'.mb_chars.upcase, '/about_us.html'
+%li{ class: current_if_current_page(current_page, '/employers/') }
+  = link_to 'Employers'.mb_chars.upcase, '/employers.html'
+%li{ class: current_if_current_page(current_page, '/curriculum/') }
+  = link_to 'Curriculum'.mb_chars.upcase, '/curriculum.html'
+%li{ class: current_if_current_page(current_page, '/payment/') }
+  = link_to 'Prices'.mb_chars.upcase, '/payment.html'
+- if current_page.url == '/employers/'
+  %li{ class: current_if_current_page(current_page, '/apply/') }
+    = link_to 'Hire'.mb_chars.upcase, config.hire_form_url, class: 'button button--vertical', target: '_blank'
+- else
+  %li{ class: current_if_current_page(current_page, '/apply/') }
+    = link_to 'Apply'.mb_chars.upcase, config.apply_sa_form_url, class: 'button button--vertical', target: '_blank'

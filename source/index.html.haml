@@ -1,54 +1,16 @@
-- description 'Lär dig programmering och webbutveckling på 12 veckor. Craft Academy är en intensiv & praktiskt inriktad utbildning där man får man lära sig programmera i JavaScript, Ruby, HTML5, CSS, mm. Vi erbjuder utbildningar i Göteborg, Stockholm och på distans'
-%section.hero-splash{style: "background-image: url(#{image_path('backgrounds/splash_1.jpg')});"}
+- description 'Learn coding and web development in three months. Craft Academy is an intensive, practical and focused training where students learn programming in Ruby, Javascript, HTML5, and CSS, among others. We offer training on-location in Gothenburg and Stockholm and around the world by distance.'
+%section.hero-splash{ style: "background-image: url(#{image_path('backgrounds/splash_1.jpg')});" }
   .container
     .centered-row
-      %h4.leader Ta kontroll över framtiden.
+      %h4.leader Are you ready to challenge yourself?
       %h1
-        = 'Lär dig koda på 12 veckor'.html_safe
-      %p
+        = 'Coding as a craft in twelve weeks'.html_safe
+      %p{ style: 'max-width: 29em;' }
         %strong
-          Craft Academy är Sveriges ledande bootcamp inom webbutveckling. Med vår hjälp får du en snabb och effektiv väg in till ett spännande yrke.
-    .centered-row
-      %h4.leader
-        Nästa kursstart:
-        = Intake.future_dates.first.start_date.strftime('%-d %b %Y')
+          With Craft Academy, you'll learn web development in an exciting, fast-paced environment and get help to find your first job or build your own project.
 
-%section.hero-splash-white{style: "background-image: url(#{image_path('backgrounds/startup-fade.jpg')});"}
-  .container
-    .centered-row
-      %article
-        %h4.leader Bli en del av lösningen
-        %h2 Det råder brist på utvecklare
-        %p.copy
-          Arbetsgivare runt om i landet söker med ljus och lykta efter juniora systemutvecklare. Med vår hjälp får du under tre månader lära dig många av de färdigheter som efterfrågas allra mest. Vi hjälper dig också att hitta ditt första jobb.
-
-%section.hero-splash-white
-  .container
-    .profile-row
-      .copy
-        %h2
-          Möt våra studenter
-        %p
-          Deltagarna på våra bootcamps har ofta helt olika bakgrund. Från entreprenörer som vill utveckla sina egna produkter till de som är mitt i karriären och känner att det är dags för en ny utmaning. Alla har dock en sak gemensamt. De vill jobba med systemutveckling och de vill göra det nu - inte om tre år.
-        .button-row.shift-to-bottom
-          %p
-            = link_to 'Våra studenter', '/students', class: "button button--vertical"
-      .image.show-desktop
-        %img= image_tag ('people/students_group.png')
-      .image.hide-desktop.no-padding
-        %img= image_tag ('/people/students_group.png')
-
-%section.hero-splash-white{style: "background-image: url(#{image_path('backgrounds/ipad-fade.jpg')});"}
-  .container
-    .centered-row
-      %article
-        %h4.leader Praktik framför teori
-        %h2 Vår unika läroplan
-        %p.copy
-          Vi tror att traditionell utbildning lär människor att klara prov, snarare än att ge dem verklig kunskap. Vi har skapat en intensiv och praktiskt inriktad utbildning som gör dig anställningsbar på bara 12 veckor.
-        = link_to 'Vår läroplan', '/curriculum.html', class: 'button button--vertical'
-
-= partial :'course_dates'
-= partial :'what_you_get'
-= partial :'apply'
-= partial :'find_us'
+= partial 'intro_za'
+= partial 'full_graduates_en'
+= partial 'who_is_it_for'
+= partial 'course_dates'
+= partial 'apply' # This should be in the footer

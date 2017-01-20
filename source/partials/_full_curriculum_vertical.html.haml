@@ -12,12 +12,12 @@
       %aside#definition-top
         %nav.definition-links
           - data.curriculum_weeks_en.each_with_index do |week, index|
-            %a.definition-link{ href: "#definition-#{index}" }= week[:title]
+            %a.definition-link{href: "#definition-#{index}"}= week[:title]
       %article
         - data.curriculum_weeks_en.each_with_index do |week, index|
           .category
-            %h4{ id: "definition-#{index}" }= week[:title]
-            %dl.definition{ id: slug(week[:title]) }
+            %h4{id: "definition-#{index}"}= week[:title]
+            %dl.definition{id: slug(week[:title])}
               %dt= week[:summary]
               %dd
                 %p= week[:blurb]

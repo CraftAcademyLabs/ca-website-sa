@@ -1,0 +1,29 @@
+%ul.column
+  %li
+    %h3 Social media
+  %li
+    = link_to 'Facebook', 'https://www.facebook.com/CraftAcademySA/', target: '_blank'
+  %li
+    = link_to 'Blog', 'https://blog.craftacademy.se/', target: '_blank'
+%ul.column
+  %li
+    %h3 Contact
+  %li
+    %address.vcard
+      %span.email
+        = link_to 'diraulo@craftacademy.se', 'mailto:diraulo@craftacademy.se'
+      .adr
+        %p
+          %span.org Craft Academy
+          %br
+          %span.org
+            = link_to '(ThinkBots Pty Ltd.)', '//thinkbots.io'
+          %br
+          %span.street-address 634 Pretorius Street
+          %br
+          %span.postal-code 0083
+          %span.locality Pretoria,
+          %span.country-name South Africa
+          %br
+      .tel
+        = link_to '+27 (0) 71 071 5114', 'tel:+27710715114'
