@@ -1,123 +1,28 @@
-- description 'Våra priser - Grundpriset för Craft Academy Bootcamp är 84 000 SEK. Titta efter aktuella erbjudanden.'
-%section.hero-splash{style: "background-image: url(#{image_path('backgrounds/splash_4.jpg')});"}
+- description 'Our prices - Base Price for Craft Academy Bootcamp is R35,000.00'
+%section.hero-splash{ style: "background-image: url(#{image_path('backgrounds/splash_4.jpg')});" }
   .container
     .centered-row
-      %h1 En Investering
+      %h1 Investment
       %p
         %strong
-          I Sverige är vi vana att betrakta utbildning som gratis. Men det är en sanning med modifikation. Den traditionella utbildningen är lång och lämnar ofta efter sig stora studieskulder på hundratusentals kronor. Craft Academy är ett alternativ som kan bespara dig både tid och pengar. Till skillnad från de flesta andra utbildningar hjälper vi dig även med coachning och kontakter när du ska söka ditt första jobb.
-
-%section.hero-splash-white{style: "background-image: url(#{image_path('backgrounds/office-1209640-fade.jpg')});"}
-  .container
-  .container
-    .centered-row
-      %h2 Kursavgift
-      %h4
-        Grundpriset för Craft Academy Bootcamp är
-      %h3
-        84 000 SEK
-      %p Se nedan för tillgängliga finansieringsalternativ.
-      %h3 3 skäl att välja Craft Academy
-    .three-width-row
-      .column
-        %h4.copy Snabbt
-        %p.copy Arbetsmarknaden skriker efter juniora utvecklare. Vi gör dig anställningsbar på bara 12 veckor. Dessutom får du coachning och kontakter när det är dags att söka ditt första jobb.
-      .column
-        %h4.copy Relevant
-        %p.copy Vår läroplan är utvecklad av yrkesverksamma mjukvaruingenjörer. Vi ser till att du lär dig rätt saker och får kompetens inom de områden som efterfrågas av arbetsgivarna.
-      .column
-        %h4.copy Frihet
-        %p.copy  Craft Academy bootcamp öppnar dörrar och ökar dina möjligheter att få ett intressant och utmanande arbete, oavsett var i världen du beger dig.
-    .centered-row
-      %h4.leader
-        Nästa kursstart:
-        = Intake.future_dates.first.start_date.strftime('%-d %b %Y')
-      %h4
-        Antalet platser är begränsat.
-      = link_to 'Ansök nu', config.apply_form_url, class: 'button button--vertical button--large'
-
-%section.hero-splash-white
-  .container
-    .centered-row
-      %h2 Finansiering
-      %p.copy
-        Craft Academy bootcamp är en privat utbildningsform och berättigar således inte till CSN-stöd. Du kan välja att betala utbildningen enligt vår standardmodell eller ansöka om delbetalning.
-      %h3 Standardbetalning
-      %table.responsive-table
-        %thead.backgrounded
-          %tr
-            %th Vid antagning
-            %th Vid kursstart
-            %th Pris inkl. moms
-
-        %tbody
-          %tr
-            %td{data:{header: "Vid antagning"}} 8 400 SEK, (anmälningsavgift)
-            %td{data:{header: "Vid kursstart"}} 75 600 SEK
-            %td{data:{header: "Summa"}}
-              %strong
-                84 000 SEK
-    .centered-row
-      %h3 Boka Tidigt-rabatt
-      %table.responsive-table
-        %thead.backgrounded
-          %tr
-            %th Vid antagning
-            %th Vid kursstart
-            %th Rabatt
-            %th Pris inkl. moms
-        %tbody
-          %tr
-            %td{data:{header: "Vid antagning"}} 8 400 SEK, (anmälningsavgift)
-            %td{data:{header: "Vid kursstart"}} 67 200 SEK, (senast 1 mån innan)
-            %td{data:{header: "Rabatt"}} 10 %
-            %td{data:{header: "Summa"}}
-              %strong
-                75 600 SEK
-    .centered-row
-      %h3 Räntefri Delbetalning *
-      %table.responsive-table
-        %thead.backgrounded
-          %tr
-            %th Vid antagning
-            %th Vid kursstart
-            %th Avbetalning 24 mån
-            %th Pris inkl. moms
-        %tbody
-          %tr
-            %td{data:{header: "Vid antagning"}} 8 400 SEK, (anmälningsavgift)
-            %td{data:{header: "Vid kursstart"}} 25 600 SEK
-            %td{data:{header: "Avbetalning 24 mån"}} 2 112 SEK / mån inkl. 29kr aviagift
-            %td{data:{header: "Summa"}}
-              %strong
-                85 575 SEK
-      %small * Räntefri delbetalning erbjuds i samarbete med Human Finans. Uppläggningsavgift på 495 kr tillkommer på första avin. Sedvanlig kreditkontroll kommer att genomföras.
-
-    .centered-row
-      %h3 Kvinnliga sökande
-      %p.copy--center Vi erbjuder <strong>8 400 kr</strong> rabatt till kvinnliga sökande eftersom kvinnor är mycket underrepresenterade i IT-branschen.
-
-= partial :'what_you_get', locals: {page: :payment}
-
+          Enrolling in the Craft Academy bootcamp is an investment in your future. It is the quickest way to jump-start a career in software development; one of the fastest and most efficient ways to change your life.
 %section
   .container
     .centered-row
-      %h2
-        ='Betalnings-<br>alternativ'.html_safe
-    .four-width-row
-      .column
-        = image_tag 'icons/icon-cash.jpg', class: 'image--small'
-        %h4 Banköverföring
-        %p.copy--left
-          Det enklaste sättet att betala in dina avgifter är genom en banköverföring. Kontakta oss för kontonummer. Märk alla betalningar med ditt namn och de 6 första siffrorna i ditt personnummer.
-      .column
-        = image_tag 'icons/icon-credit-card.jpg', class: 'image--small'
-        %h4 Kort
-        %p.copy--left
-          Vi kan ta emot de flesta kreditkort genom vår tjänsteleverantör Stripe.
-      .column
-        = image_tag 'icons/icon-briefcase.png', class: 'image--small'
-        %h4 Faktura
-        %p Är du företagare ställer vi gärna ut en momsfaktura på kursavgiften och du kan få 30 dagars kredit. Kontakta oss för mer information.
+      %h4.leader Craft Academy
+      %h2 Course Fees
+      %h4
+        The base price for Craft Academy bootcamp is R35,000.00
+      .three-width-row
+        .column
+          %h3.copy--left Everything included
+          %p.copy--left Your course fees include all instruction, materials, and continued support before and after the bootcamp with technical and career assistance. We provide all the necessary tools to develop efficiently - software licenses, a functional and ergonomic work environment.
+        .column
+          %h3.copy--left Female participants
+          %p.copy--left We also proudly offer a 10% discount to female bootcamp participants. Our industry needs more female developers and we want to do everything we can to help women succeed on their coding journey.
+      %p.copy--left
+        Finances shouldn't stop anyone from fulfilling their dream of becoming a programmer. We encourage everyone to contact us to discuss payment options, including our flexible deposit and payment schedule.
+      %p.copy--left
+        A new cohort starts every eight weeks. Will you start your career as a junior developer with us?
 
-= partial :'apply', locals: {page: :about_us}
+= partial 'apply'
