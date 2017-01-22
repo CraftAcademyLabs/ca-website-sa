@@ -12,7 +12,7 @@ Dir['lib/*.rb'].each { |file| require file }
 activate :directory_indexes
 activate :meta_tags
 
-set :url_root, 'https://craftacademy.se'
+set :url_root, 'https://thecraftacademy.co.za'
 activate :search_engine_sitemap
 
 # disable layout

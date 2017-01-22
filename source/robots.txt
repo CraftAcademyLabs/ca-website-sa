@@ -1,4 +1,3 @@
-Sitemap: https://craftacademy.se/sitemap.xml
-
+Sitemap: https://thecraftacademy.co.za/sitemap.xml
 
 User-agent: *
