@@ -5,10 +5,6 @@ set :website_version, 2.3
 
 Dir['lib/*.rb'].each { |file| require file }
 
-###
-# Compass
-###
-
 activate :directory_indexes
 activate :meta_tags
 
@@ -22,28 +18,6 @@ page '.htaccess.apache', layout: false
 after_build do
   File.rename 'build/.htaccess.apache', 'build/.htaccess'
 end
-
-# Change Compass configuration
-# compass_config do |config|
-#   config.output_style = :compact
-# end
-
-###
-# Page options, layouts, aliases and proxies
-###
-
-# Per-page layout changes:
-#
-# With no layout
-# page "/path/to/file.html", layout: false
-#
-# With alternative layout
-# page "/path/to/file.html", layout: :otherlayout
-#
-# A path which all have the same layout
-# with_layout :admin do
-#   page "/admin/*"
-# end
 
 ###
 # Helpers
@@ -83,10 +57,10 @@ end
 
 # Proxy pages (https://middlemanapp.com/advanced/dynamic_pages/)
 data.graduates_en.each do |grad|
-  if grad[:case_study]
-    url_slug = graduate_slug(grad)
-    proxy "/students/#{url_slug}.html", '/case-studies/template.html', locals: { grad: grad }, ignore: true
-  end
+  next unless grad[:case_study]
+  url_slug = graduate_slug(grad)
+  proxy "/students/#{url_slug}.html",
+        '/case-studies/template.html', locals: { grad: grad }, ignore: true
 end
 
 set :css_dir, 'sass'
@@ -104,16 +78,6 @@ set :class_site_url, 'http://class.craftacademy.se'
 
 # Ignore folders with unused templates
 ignore 'elements/*'
-ignore 'not_in_use/*'
-# ignore 'case-studies/*' #as long as we don't present students
-
-# Redirects from old site urls
-redirect 'payments/new.html', to: config.apply_form_url
-redirect 'apply.html', to: config.apply_form_url
-redirect 'apply-for-ronin.html', to: config.apply_form_url
-redirect 'blog.html', to: 'https://blog.craftacademy.se'
-redirect 'pretoria.html', to: 'south-africa.html'
-redirect 'south-africa.html', to: 'english/za/index.html'
 
 activate :deploy do |deploy|
   deploy.method          = :rsync
@@ -136,11 +100,6 @@ end
 
 # Build-specific configuration
 configure :build do
-  # activate :imageoptim do |options|
-  #   options.pngout    = false
-  #   options.svgo      = false
-  # end
-
   # For example, change the Compass output style for deployment
   activate :minify_css
 
@@ -162,20 +121,20 @@ configure :build do
 
   # Filewatcher ignore list
   set :file_watcher_ignore, [
-    /^bin(\/|$)/,
-    /^\.bundle(\/|$)/,
+    %r{^bin(\/|$)},
+    %r{^\.bundle(\/|$)},
     # /^vendor(\/|$)/,
-    /^node_modules(\/|$)/,
-    /^\.sass-cache(\/|$)/,
-    /^\.cache(\/|$)/,
-    /^\.git(\/|$)/,
+    %r{^node_modules(\/|$)},
+    %r{^\.sass-cache(\/|$)},
+    %r{^\.cache(\/|$)},
+    %r{^\.git(\/|$)},
     /^\.gitignore$/,
     /\.DS_Store/,
     /^\.rbenv-.*$/,
     /^Gemfile$/,
     /^Gemfile\.lock$/,
     /~$/,
-    /(^|\/)\.?#/,
-    /^tmp\//
+    %r{(^|\/)\.?#},
+    %r{^tmp\/}
   ]
 end
