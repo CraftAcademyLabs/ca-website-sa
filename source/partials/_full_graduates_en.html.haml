@@ -21,7 +21,7 @@
               .button-row.shift-to-bottom
                 %p
                   - if grad[:case_study]
-                    = link_to "Read #{possessivize(grad[:first_name])} story", "/english/students/#{graduate_slug(grad)}", class: 'button button--horizontal'
+                    = link_to "Read #{possessivize(grad[:first_name])} story", "/students/#{graduate_slug(grad)}", class: 'button button--horizontal'
                   - elsif grad[:case_study_link]
                     = link_to "Read #{possessivize(grad[:first_name])} story", grad[:case_study_link], class: 'button button--horizontal', target: '_blank'
                   - if grad[:blog_link]
