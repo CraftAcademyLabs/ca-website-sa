@@ -4,45 +4,26 @@
 %section{class: language == :se ? 'hero' : '', style: current_page_is_campaign_page? ? "background-color: #{color} !important"  : ''}
   .container{style: current_page_is_campaign_page? ? "background-color: #{color} !important"  : ''}
     .row
-      - if language == :se
-        %h4.leader Kommande bootcamps
-        %h2 Kursdatum
-        %p.copy
-          %strong
-            För bästa resultat rekommenderar vi att du närvarar i våra lokaler på Chalmers Innovation i Göteborg under hela utbildningstiden. Om du inte har möjlighet går det även att delta i utbildningen på distans.
-      - else
-        %h2 Course Dates
-        %p.copy--left
-          %strong
-            Apply in time - the selection process takes approximately two weeks and we will interview you before you are accepted. There are at most twelve spots in each cohort.
+      %h2 Course Dates
+      %p.copy--left
+        %strong
+          Apply in time - the selection process takes approximately two weeks and we will interview you before you are accepted. There are at most twelve spots in each cohort.
     .centered-row
       %table.responsive-table
         %thead
           %tr
-            - if language == :se
-              %th Förberedande kurs
-              %th Kursstart
-              %th Examen
-              %th Plats
-            - else
-              %th Prep-Course start
-              %th Course start
-              %th Graduation
+            %th Prep-Course start
+            %th Course start
+            %th Graduation
 
         %tbody
           - Intake.future_dates.each do |intake|
             %tr
-              - if language == :se
-                %td{data:{header: 'Förberedande kurs'}}= intake.precourse_start_date.strftime('%-d %b %Y')
-                %td{data:{header: 'Kursstart'}}= intake.start_date.strftime('%-d %b %Y')
-                %td{data:{header: 'Examen'}}= intake.end_date.strftime('%-d %b %Y')
-                %td{data:{header: 'Plats'}}= intake.locations
-              -else
-                %td{data:{header: 'Prep-Course start'}}= intake.precourse_start_date.strftime('%-d %B %Y')
-                %td
-                  %strong{data:{header: 'Course start'}}= intake.start_date.strftime('%-d %B %Y')
-                %td{data:{header: 'Graduation'}}= intake.end_date.strftime('%-d %B %Y')
-    .row
-      - if language == :se
-        %h4 Ansök i god tid, antal utbildningsplatser är begränsat.
-        = link_to 'Ansök nu', config.apply_form_url, class: 'button button--vertical'
+              %td{data:{header: 'Prep-Course start'}}= intake.precourse_start_date.strftime('%-d %B %Y')
+              %td
+                %strong{data:{header: 'Course start'}}= intake.start_date.strftime('%-d %B %Y')
+              %td{data:{header: 'Graduation'}}= intake.end_date.strftime('%-d %B %Y')
+    -# .row
+    -#   - if language == :se
+    -#     %h4 Ansök i god tid, antal utbildningsplatser är begränsat.
+    -#     = link_to 'Ansök nu', config.apply_form_url, class: 'button button--vertical'
