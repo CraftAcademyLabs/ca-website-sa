@@ -35,5 +35,17 @@
   locations: "Göteborg, Stockholm, Rotterdam, Pretoria, Remote (with 2 week x-mas break)"
 
 - start_date: 22 January 2018
-  end_date: 20 April 2018
-  locations: "Göteborg, Stockholm, Rotterdam, Pretoria, Remote"
+  end_date: 13 April 2018
+  locations: "Göteborg, Stockholm, Pretoria, Remote"
+
+- start_date: 3 April 2018
+  end_date: 29 June 2018
+  locations: "Göteborg, Stockholm, Pretoria, Remote"
+
+- start_date: 11 June 2018
+  end_date: 14 September 2018
+  locations: "Göteborg, Stockholm, Pretoria, Remote (with 2 week summer break)"
+
+- start_date: 27 August 2018
+  end_date: 9 November 2018
+  locations: "Göteborg, Stockholm, Pretoria, Remote"
